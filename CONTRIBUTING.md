@@ -2,16 +2,16 @@
 
 ## 为什么不去建设《FreeBSD 手册》
 
-FreeBSD 项目拒绝（表现为长期搁置）任何实质上的 PR，除了季度报告。事实上，纵观提交数据，freebsd doc 项目已经死亡十余年：
+FreeBSD 项目对除季度报告外的实质性 PR 多采取长期搁置的处理方式。从提交数据来看，freebsd-doc 项目的活跃度在过去十余年持续走低：
 
-使用 [统计分析 git 项目](https://gist.github.com/ykla/6c3df44c371d37fc3196ddf5fa87ce5f) [备份](https://megalodon.jp/?url=https://gist.github.com/ykla/6c3df44c371d37fc3196ddf5fa87ce5f) 对 freebsd-doc 进行分析的结果参见 [freebsd-doc-2025 分析报告](https://gist.github.com/ykla/363bf922d0785d0b02dd43f8289368db) [备份](https://megalodon.jp/?url=https://gist.github.com/ykla/363bf922d0785d0b02dd43f8289368db)。
+使用统计分析 git 项目[EB/OL]. [2026-03-26]. <https://gist.github.com/ykla/6c3df44c371d37fc3196ddf5fa87ce5f> 对 freebsd-doc 进行分析的结果参见：freebsd-doc-2025 分析报告[EB/OL]. [2026-03-26]. <https://gist.github.com/ykla/363bf922d0785d0b02dd43f8289368db>。
 
-- 2005-2006 年：第一次显著下滑
-- 2015-2016 年：第二次大幅下滑
+- 2005–2006 年：第一次显著下滑
+- 2015–2016 年：第二次大幅下滑
 
-项目结构复杂且混乱。维护者自己都看不懂。比如在翻译时的某些数据引用是否可复用。
+该项目结构复杂且混乱，例如在翻译过程中部分数据引用的可复用性难以判断，即使对于维护者而言亦是如此。
 
-由于其安全报告的文件名在 Windows 下是非法字符（有英文冒号 `:`），因此导致整个项目无法在 Windows 下正常拉取：
+此外，其安全报告的文件名包含英文冒号 `:`，这在 Windows 系统中属于非法字符，导致整个项目无法在 Windows 环境下正常检出：
 
 ```powershell
 PS C:\Users\ykla> git clone https://github.com/freebsd/freebsd-doc
@@ -31,76 +31,76 @@ and retry with 'git restore --source=HEAD :/'
 
 ## 贡献指南概述
 
-如果你想让你的教程出现在本书中，你可以这样做：
+若您希望将教程收录至本书，可通过以下方式提交：
 
-- 如果你熟悉 GitHub，可以点击电脑端右侧的“编辑此页”，进入项目进行操作。整个项目使用 Markdown 语法 +  Gitbook，简单易上手（具体详见项目 WiKi）；
-- 如果以上有困难，你还可以发 PDF、Word 或者 TXT 给我。请将文件发送至电子邮件 `yklaxds@gmail.com`（我将在 3 天内回复。若我没有回复，请换个邮件再发一次，或者提交 issue）；如果有视频教程，以各大云盘链接为宜。
+- 若您熟悉 GitHub 操作，可点击桌面端网页右侧的“编辑此页”按钮进入项目进行编辑。本项目采用 Markdown 语法配合 GitBook 平台，易于上手（具体操作详见项目 WiKi）。
+- 若上述方式存在困难，您也可发送 PDF、Word 或 TXT 格式的文档至电子邮箱 `yklaxds@gmail.com`（我们将在 3 个工作日内回复。若未收到回复，请更换邮箱再次发送或提交 issue）；若有视频教程，建议提供各大云盘的分享链接。
 
-本书现接受以下内容：
+本书现收录以下类型的内容：
 
-- 一切与 BSD 相关（包括不限于 FreeBSD，OpenBSD，NetBSD）以及各种体系结构的教程。你既可以扩充当前教程，也可以新建一节；
-- 下方的 ToDo 列表或 GitHub Project；
-- 你亦可在文学故事章节分享你与 BSD 的故事，你的个人心得体会。
+- 一切与 BSD 相关（包括但不限于 FreeBSD、OpenBSD、NetBSD）及各种体系架构的教程。您既可以扩充现有教程，也可以创建新的章节。
+- 下方的 ToDo 列表或 GitHub Project 中的任务。
+- 您亦可在文学故事章节分享您与 BSD 的故事及个人心得体会。
 
 ### 基本原则与方法论
 
 #### 基本原则
 
-- 尽可能详细和基础，不要假定用户有任何使用背景
-- 使用大型软件（如 IDE、JAVA）时，请注明软件版本号
-- **应注意引用的权威性、时效性和准确性。尽量采用原始文献，次选二手文献，避免三手文献**
-- 在引用其他网站内容时，请查证其引用的内容是否真实可信，并且不要直接引用网站内容，而是要尽量查阅一手来源
-- 请提交到 main 分支
-- 请避免学术不端行为，参见 [高等学校预防与处理学术不端行为办法](https://www.gov.cn/zhengce/2016-07/19/content_5713390.htm) [备份](https://megalodon.jp/?url=https://www.gov.cn/zhengce/2016-07/19/content_5713390.htm)
-- 遵守 [FreeBSD 中文社区行为规范](https://docs.bsdcn.org/CODE_OF_CONDUCT) [备份](https://web.archive.org/web/20260114065427/https://docs.bsdcn.org/CODE_OF_CONDUCT)
+- 内容应尽可能详尽且基础，勿假定读者具备任何使用背景
+- 介绍大型软件（如 IDE、Java）时，请注明软件版本号
+- **引用应注重权威性、时效性与准确性。优先采用原始文献，次选二手文献，避免使用三手文献**
+- 引用其他网站内容时，请核实其内容是否真实可信，尽量查阅一手来源而非直接引用网站内容
+- 请提交至 main 分支
+- 请避免学术不端行为，参见：高等学校预防与处理学术不端行为办法[EB/OL]. [2026-03-26]. <https://www.gov.cn/zhengce/2016-07/19/content_5713390.htm> （AIGC 相关规定除外）
+- 请遵守 [FreeBSD 中文社区行为规范](https://docs.bsdcn.org/CODE_OF_CONDUCT)
+- 所有 AIGC（AI-Generated Content，人工智能生成内容）必须经过人工二次确认，核实其原始出处与来源的可靠性，不得直接提交。但纯粹翻译可作为例外绕过本规定。任何人对所提交内容自行负责，无论其是否由 AIGC 生成
 
-#### 使之成为“一本书”，而不仅仅是本字典或手册
+#### 使之成为“一本书”，而不仅是字典或手册
 
-- 如果某一技术在最新版本被移除，则应及时移除其在本书的对应位置内容
-- 使全书语气温柔而坚定
-- 在最大化减少原文引用的前提下，重写各章节内容，删除冗余。
-- 现代化、简化 BSD 中文文档协作方式：
+- 若某一技术在最新版本中已被移除，应及时移除其在本书中的对应内容
+- 使全书语气温和而坚定
+- 在尽量减少原文引用的前提下，重写各章节内容并删除冗余部分
+- 实现 BSD 中文文档协作方式的现代化与简化：
   - 自动化（CI 检查、预览、生成 HTML/PDF）
-  - 仅用最基础的 Markdown 语法，避免复杂扩展和繁琐流程
-  - 技术和选材与时俱进，确保内容现代化。
-- 严格验证每一部分：
-  - 参考文献：不仅要求来源可查，而且要求来源可信：
+  - 仅使用最基础的 Markdown 语法，避免复杂扩展和繁琐流程
+  - 技术与选材应与时俱进，确保内容的现代化
+- 严格验证每一部分内容：
+  - 参考文献：不仅要求来源可查，更要求来源可信
   - 原理性内容：
-    - 追溯到具体 FreeBSD 源码文件、提交记录或函数；
-    - 具体到相关标准、规范、法律文件等
+    - 追溯至具体的 FreeBSD 源代码文件、提交记录或函数
+    - 明确引用相关标准、规范或法律文件
     - 分析其设计哲学与开发思路
-  - 操作性内容：在 FreeBSD 环境中亲自试验，确保可复现
-- 审视原作者的开发哲学与理念，评价其合理性，并尝试简单参与相关项目。
-- 指出并修正上游官方手册中的错误或已过时内容。
+  - 操作性内容：应在 FreeBSD 环境中亲自测试，确保可复现
+- 审视原作者的开发哲学与理念，评价其合理性，并尝试简单参与相关项目
+- 指出并修正上游官方手册中的错误或过时内容
 - 生成英文版本
 
 #### 细则
 
-- 非拉丁字符与拉丁字符间应该加空格（中英文/数字间应有一个半角空格），有许多 Markdown 格式化工具可以自动完成。
-- 不应该使用 `sudo` 而应该用 `#` 代替，除非特例（如讲解如何使用 `sudo` 本身）；普通用户权限请使用 `$` 表示。
-- 安装软件时，给出 pkg 或 ports 两种方法，除非极不建议使用 pkg，如特定内核模块等。
-- 请注意版权问题。引用或灵感受到启发时，请备注文章链接出处，必要时可使用互联网档案馆进行快照保存。
-- 编辑时尽量以最新的 FreeBSD RELEASE 为基准，绝对避免出现 `pkg_add` 此类过时东西。如有必要，必须予以注明版本。
-- 对于编写时长问题，理论上会一直持续下去，跟随每个 FreeBSD 大版本迭代。
-- 由于种种原因，无法立即验证所写内容是否正确无误时，请编辑者打上“警告：以下内容为理论，未经实际测试，仅供参考，如果可以使用请提交 issue 以移除本标签。”标签以作区分。
-- 不应该对文学故事章节进行除错字排版以外的删减。
-- 请勿使用诸如 Gitee 等境内无法确保信息安全与数据稳定的平台（这类平台无法保证留存文件的长久可访问性，不适合存放适用于长期归档的内容，在未来会有极大风险无法获取该文件）。
-- 当进行错别字修改时，请务必确证其的确是错别字，可参考《现代汉语词典》第 7 版等资料进行佐证。
+- 非拉丁字符与拉丁字符之间应添加空格（中英文/数字之间应有一个半角空格），许多 Markdown 格式化工具可自动完成此操作
+- 不应使用 `sudo` 而应使用 `#` 代替，除非是特殊情况（如讲解如何使用 `sudo` 本身）；普通用户权限请使用 `$` 表示
+- 安装软件时，请提供 pkg（FreeBSD 的二进制包管理器，用于安装、更新和管理预编译软件包，提供依赖关系解析和版本管理功能）或 ports 两种方法，除非极不建议使用 pkg（如特定内核模块等）
+- 请注意版权问题。引用内容或受到启发时，请备注文章链接出处，必要时可使用互联网档案馆进行快照保存
+- 编辑时请尽量以最新的 FreeBSD RELEASE（FreeBSD 的正式发布版本，经过充分测试和稳定化，适合生产环境使用，每个 RELEASE 版本均有长期支持周期）为基准，绝对避免出现 `pkg_add` 等过时内容。如有必要，必须注明相关版本
+- 关于编写时长，理论上会持续进行，跟随每个 FreeBSD 大版本迭代更新
+- 若因各种原因无法立即验证所写内容的正确性，请编辑者添加“警告：以下内容为理论，未经实际测试，仅供参考，如可使用请提交 issue 以移除本标签。”的提示标签进行区分
+- 不应在文学故事章节进行除错别字和排版以外的删减
+- 请勿使用 Gitee 等境内无法确保信息安全与数据稳定的平台（此类平台无法保证文件的长期可访问性，不适合存放需长期归档的内容，未来存在无法获取文件的重大风险）
+- 进行错别字修改时，请务必确认其确为错别字，可参考《现代汉语词典》第 7 版等资料进行佐证
 
 ## 实用附录
 
-### 如何使用 git 拉取本项目
+### 如何使用 Git 拉取本项目
 
 >**技巧**
 >
->理论上你完全可以通过 GitHub 在线完成所有提交。
+> 您完全可以通过 GitHub 在线完成所有提交。
 
-![](https://img.shields.io/github/repo-size/FreeBSD-Ask/FreeBSD-Ask?style=for-the-badge&label=%E6%9C%AC%E9%A1%B9%E7%9B%AE%E5%AD%98%E5%82%A8%E5%BA%93%E4%BD%93%E7%A7%AF&color=EB0028)
+![项目体积](https://img.shields.io/github/repo-size/FreeBSD-Ask/FreeBSD-Ask?style=for-the-badge&label=%E6%9C%AC%E9%A1%B9%E7%9B%AE%E5%AD%98%E5%82%A8%E5%BA%93%E4%BD%93%E7%A7%AF&color=EB0028)
 
+本项目体积较大，使用 Git 拉取时可能导致缓冲区溢出，可通过修改 Git 配置文件来扩大缓冲区。
 
-本项目太大，使用 git 拉取时可能会导致缓冲区溢出，可改变 git 配置文件，以实现对缓冲区的扩大：
-
-以下是一个可用的 `~/.gitconfig`（Windows 上的位置为 `C:\Users\你的用户名\.gitconfig`） 的文件示例：
+以下是一个可用的 `~/.gitconfig`（在 Windows 系统中的位置为 `C:\Users\你的用户名\.gitconfig`）的文件示例：
 
 ```ini
 [filter "lfs"]
@@ -124,8 +124,8 @@ and retry with 'git restore --source=HEAD :/'
 
 名词解释：
 
-- `autocrlf`：配置 Git 自动处理(转换)行结束符的默认行为。参见 [配置 Git 处理行结束符 - Github Docs](https://docs.github.com/zh/get-started/git-basics/configuring-git-to-handle-line-endings) [备份](https://web.archive.org/web/20260114065307/https://docs.github.com/zh/get-started/git-basics/configuring-git-to-handle-line-endings)
-- `signingkey`：指设置带签名提交时默认使用的签名密钥。signingkey 既可指 GPG Key，亦可指 SSH Key。因为自 Git 2.34 起，Git 支持了 SSH 签名验证功能。参见 [关于提交签名验证 - Github Docs](https://docs.github.com/zh/authentication/managing-commit-signature-verification/about-commit-signature-verification) [备份](https://web.archive.org/web/20260114065242/https://docs.github.com/zh/authentication/managing-commit-signature-verification/about-commit-signature-verification)
+- `autocrlf`：配置 Git 自动处理（转换）行结束符的默认行为。参见：配置 Git 处理行结束符 - GitHub Docs[EB/OL]. [2026-03-26]. <https://docs.github.com/zh/get-started/git-basics/configuring-git-to-handle-line-endings>
+- `signingkey`：指设置带签名提交时默认使用的签名密钥。signingkey 既可指 GPG Key，亦可指 SSH Key。自 Git 2.34 起，Git 支持了 SSH 签名验证功能。参见：关于提交签名验证 - GitHub Docs[EB/OL]. [2026-03-26]. <https://docs.github.com/zh/authentication/managing-commit-signature-verification/about-commit-signature-verification>
 
 拉取命令：
 
@@ -133,7 +133,7 @@ and retry with 'git restore --source=HEAD :/'
 $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 ```
 
-#### 附录：Windows git 配置示例
+#### 附录：Windows Git 配置示例
 
 ```ini
 [filter "lfs"]
@@ -146,7 +146,7 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 	email = yklaxds@gmail.com
 	signingkey = 11B44C23A0A0B986
 [commit]
-  gpgsign = true 
+  gpgsign = true
 [core]
 	autocrlf = true
 	longpaths = true
@@ -169,34 +169,34 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 
 #### 故障排除
 
-- `致命错误:无法访问 'https://github.com/FreeBSD-Ask/FreeBSD-Ask/': Recv failure: 连接被对方重置`
+- `致命错误：无法访问 'https://github.com/FreeBSD-Ask/FreeBSD-Ask/': Recv failure: 连接被对方重置`
 
-请尝试拉取这个项目 `https://github.com/FreeBSD-Ask/LDWG`。
+请尝试拉取项目 `https://github.com/FreeBSD-Ask/LDWG`。
 
-如果报错类似，说明你的网络有问题。请使用代理。
+若报错类似，说明您的网络存在问题，请使用代理。
 
 ### 项目简介
 
-本项目是主项目（即 `https://book.bsdcn.org`）托管在 Gitbook；
+本项目主要托管在 GitBook（即 `https://book.bsdcn.org`）；
 
-`https://docs.bsdcn.org` 是社区自行构建的，docs 网站本身的贡献指南参见 [FreeBSD 从入门到跑路 VitePress 镜像项目](https://github.com/FreeBSD-Ask/FreeBSD-Ask.github.io/blob/main/README.md) [备份](https://web.archive.org/web/20260115014200/https://github.com/FreeBSD-Ask/FreeBSD-Ask.github.io/blob/main/README.md)。
+`https://docs.bsdcn.org` 由社区自行构建，docs 网站本身的贡献指南参见：FreeBSD 从入门到跑路 VitePress 镜像项目[EB/OL]. [2026-03-26]. <https://github.com/FreeBSD-Ask/FreeBSD-Ask.github.io/blob/main/README.md>。
 
 >**技巧**
 >
->如果你仅想贡献内容本身，尚无改进网站 docs 的浏览体验与构建优化等等意向，则仅需阅读本文即可。
+> 若您仅想贡献内容本身，尚无改进 docs 网站浏览体验与构建优化等意向，则仅需阅读本文即可。
 
 ### 项目结构概览
 
 ```sh
->FreeBSD-Ask-main
-│  .gitattributes  # 用于让 github 正确识别 markdown，用于在 github 正确高亮，正确显示编程语言（Languages）的统计信息
+> FreeBSD-Ask-main
+│  .gitattributes  # 用于让 GitHub 正确识别 markdown，用于在 GitHub 正确高亮，正确显示编程语言（Languages）的统计信息
 │  .gitignore # 一些规则，用于阻止 git 上传特定类型的文件或目录，如 node_modules
 │  CHANGELOG-ARCHIVE.md # 普通文件，记录既往所有重要变动
 │  CHANGELOG.md # 普通文件，记录当前季度的重要变动。当你有新的子章节提交或彻底重写时，请将其记录到此处
 │  CODE_OF_CONDUCT.md # 用于合规，行为准则
-│  CONTRIBUTING.md # 本贡献指南
+│  CONTRIBUTING.md # 贡献指南（本文本身）
 │  LICENSE # 许可证
-│  mu-lu.md # 由 Github Action mulu.yml 自动同步
+│  mu-lu.md # 由 GitHub Action mulu.yml 自动同步
 │  README.md # 主页
 │  SECURITY.md # 用于合规，安全报告策略
 │  SUMMARY.md # 目录文件，同时用于生成 vitepress 左侧边栏
@@ -215,20 +215,20 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 │  │  dependabot.yml # 检查 GitHub Action 调用的 Action 有无更新，并提交 PR
 │  │  lychee.toml # 由 links.yml 调用
 │  │
-│  ├─ISSUE_TEMPLATE  # Github issue、PR 模板
-│  │      bug_report.md  # Github issue 模板
-│  │      feature_request.md  # Github PR 模板
+│  ├─ISSUE_TEMPLATE  # GitHub issue、PR 模板
+│  │      bug_report.md  # GitHub issue 模板
+│  │      feature_request.md  # GitHub PR 模板
 │  │
-│  ├─scripts # Github Action 相关，由相关 yml 脚本调用
+│  ├─scripts # GitHub Action 相关，由 yml 脚本调用
 │  │      check_images.py # 由 check-images.yml 调用
 │  │      update_ga4_readme.py # 由 update-ga4.yml 调用
 │  │      update_progress.sh # 由 Update-commit-progress.yml 调用
 │  │
-│  └─workflows # Github Action，用于自动化处理一些简单任务
+│  └─workflows # GitHub Action，用于自动化处理一些简单任务
 │          Auto-Assign.yml # 自动为 issue PR 分配人员进行处理
 │          AutoCorrect.yml # markdown 格式修正，会自动提交 PR
 │          check-images.yml # 检查图片的调用情况，有无正确引用图片，不正确会生成 issue
-│          create-pdf.yml # 用于在 GitHub release 生成电子书 PDF、EPUB 
+│          create-pdf.yml # 用于在 GitHub release 生成电子书 PDF、EPUB
 │          file-name-check.yml # 检查 SUMMARY.md 目录中的文件引用是否正确，不正确会生成 issue
 │          links.yml # 链接检查，检查文中调用的 URL 是否能正常访问
 │          markdown-lint2.yml # markdown 格式检查
@@ -269,9 +269,9 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 
 ### 如何新建章节
 
-自行操作时参见操作实例 [Commit 6023cc8](https://github.com/FreeBSD-Ask/FreeBSD-Ask/commit/6023cc8d58f3a1b9849ff11fa63bf3980177c370) [备份](https://web.archive.org/web/20260115011403/https://github.com/FreeBSD-Ask/FreeBSD-Ask/commit/6023cc8d58f3a1b9849ff11fa63bf3980177c370) 和下方 `SUMMARY.md` 结构说明。
+自行操作时参见操作实例 Commit 6023cc8[EB/OL]. [2026-03-26]. <https://github.com/FreeBSD-Ask/FreeBSD-Ask/commit/6023cc8d58f3a1b9849ff11fa63bf3980177c370> 和下方 `SUMMARY.md` 结构说明。
 
-如果有困难可发邮件联系 ykla 来操作。
+若有困难可发邮件联系 ykla 协助操作。
 
 #### `SUMMARY.md` 目录结构
 
@@ -314,41 +314,41 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 其他从略
 ```
 
-可以看到，`SUMMARY.md` 在形式上就是普通的 markdown 文档，并无特殊支持。
+可以看到，`SUMMARY.md` 在形式上就是普通的 Markdown 文档，并无特殊支持。
 
-但是也有一些注意事项：
+但有一些注意事项：
 
-- 第一行 `# Table of contents` 是绝对不允许变动的，否则 Gitbook 将无法识别，造成失去同步。
-- 我们要求应该形如 `* [2.2 使用 bsdinstall 开始安装](di-2-zhang-an-zhuang-freebsd/di-2.2-jie-start-install.md)`，不允许 `* [2.2 使用 bsdinstall 开始安装](di-3-zhang-ni-hao/di-2.2-jie-start-install.md)`，即你的目录结构和放置的文件位置必须一致。（不一致并不会出错，但是本项目要求你一致）
-- 通过 `sync-headers.yml`，将自动同步 `SUMMARY.md` 中的章节标题到具体的 markdown 文件中。因此若你要修改 `di-2.2-jie-start-install.md` 的一级标题 `# 2.2 使用 bsdinstall 开始安装`，必须只能修改 `SUMMARY.md` 中的 `2.2 使用 bsdinstall 开始安装`，否则会被 `sync-headers.yml` 覆盖。当二者不同时，若正好在提交时未触发脚本即构建，那么 Gitbook 将以 `SUMMARY.md` 中的目录为准。
+- 第一行 `# Table of contents` 绝对不允许变更，否则 GitBook 将无法识别，导致失去同步。
+- 要求格式应为 `* [2.2 使用 bsdinstall 开始安装](di-2-zhang-an-zhuang-freebsd/di-2.2-jie-start-install.md)`，不允许出现 `* [2.2 使用 bsdinstall 开始安装](di-3-zhang-ni-hao/di-2.2-jie-start-install.md)` 这种情况，即目录结构与文件放置位置必须一致（不一致虽不会报错，但本项目要求保持一致）。
+- 通过 `sync-headers.yml`，将自动同步 `SUMMARY.md` 中的章节标题到具体的 Markdown 文件中。因此若需修改 `di-2.2-jie-start-install.md` 的一级标题 `# 2.2 使用 bsdinstall 开始安装`，必须仅修改 `SUMMARY.md` 中的 `2.2 使用 bsdinstall 开始安装`，否则会被 `sync-headers.yml` 覆盖。当二者不一致时，若提交时未触发脚本构建，则 GitBook 将以 `SUMMARY.md` 中的目录为准。
 
 ### 预览页面
 
-当你提交 PR 时，会自动生成一个预览的网站。
+当您提交 PR 时，系统会自动生成一个预览网站。
 
-实际上，所有提交都有对应版本的网站：
+实际上，所有提交都有对应的网站版本：
 
-![](.gitbook/assets/yu-lan1.png)
+![GitHub PR 页面](.gitbook/assets/yu-lan1.png)
 
-你可以通过该链接获取你当前 PR 的实际显示样式：
+您可通过该链接获取当前 PR 的实际显示样式：
 
-![](.gitbook/assets/yu-lan2.png)
+![GitHub PR 页面](.gitbook/assets/yu-lan2.png)
 
-![](.gitbook/assets/yu-lan3.png)
+![GitBook 预览页面](.gitbook/assets/yu-lan3.png)
 
 且每次 push 都会自动更新：
 
-![](.gitbook/assets/yu-lan4.png)
+![GitBook 预览页面](.gitbook/assets/yu-lan4.png)
 
 ## 开放任务
 
-所有任务的排序都是随机的并无优先级之分，你可以选你喜欢的去做。
+所有任务的排序均为随机，无优先级之分，您可选择感兴趣的任务进行。
 
 ### 开源社区
 
 #### 维护百度百科、维基百科相关条目
 
-如增补修订各大 BSD 中文条目。
+如增补修订各 BSD 中文条目。
 
 #### 帮助修订 USTC 镜像脚本
 
@@ -368,14 +368,14 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 - [ ] 32.4.网络信息系统（NIS）（过时，用 SSSD-LADP 代替）
 - [ ] 30.5.使用 ATM 上的 PPP (PPPoA)（过时）
 - [ ] 29.4.拨入服务（过时）
-- [ ] gbde 相关加密（已从 [源代码](https://github.com/freebsd/freebsd-src/commit/8d2d1d651678178aa7f24f0530347f860423fd9e) [备份](https://web.archive.org/web/20260115011216/https://github.com/freebsd/freebsd-src/commit/8d2d1d651678178aa7f24f0530347f860423fd9e) 移除）
+- [ ] gbde 相关加密（已从 [源代码](https://github.com/freebsd/freebsd-src/commit/8d2d1d651678178aa7f24f0530347f860423fd9e)移除）
 - [ ] 29.5.拨出服务（过时）
 - [ ] 30.2.配置 PPP（过时）
 - [ ] 31.3.DragonFly 邮件代理（DMA）（过时，用 Postfix 等代替）
 - [ ] 20.10.文件系统快照（UFS）（UFS 快照？？？）
 - [ ] 21.8.通过 GEOM 实现 UFS 日志（无意义）
 
- **Just for fun**（没有也行无关紧要）
+**Just for fun**（可有可无）
 
 - [ ] 20.7.创建和使用软盘（谁还有这种东西？2024，日本政府决定全面淘汰软盘）（无意义，但勉强可以写，若有光驱和软盘 *Just for fun*）
 - [ ] 20.6.创建和使用 DVD（无意义，但勉强可以写，若有光驱和光盘 *Just for fun*）
@@ -384,12 +384,12 @@ $ git clone https://github.com/FreeBSD-Ask/FreeBSD-Ask
 
 **需要重写** 的内容（请撰写这些内容）：
 
-参见 [Projects](https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects) [备份](https://web.archive.org/web/20260114065016/https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects?query=is%3Aopen)。
+参见：Projects[EB/OL]. [2026-03-26]. <https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects>。
 
 ### NetBSD ToDo
 
-参见 [Projects](https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects) [备份](https://web.archive.org/web/20260114065016/https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects?query=is%3Aopen)。
+参见：Projects[EB/OL]. [2026-03-26]. <https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects>。
 
 ### DragonFlyBSD ToDo
 
-参见 [Projects](https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects) [备份](https://web.archive.org/web/20260114065016/https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects?query=is%3Aopen)。
+参见：Projects[EB/OL]. [2026-03-26]. <https://github.com/FreeBSD-Ask/FreeBSD-Ask/projects>。

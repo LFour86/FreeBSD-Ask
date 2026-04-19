@@ -1,77 +1,78 @@
 # FreeBSD 从入门到跑路
 
-![](.gitbook/assets/web-logo.png)
+![🎉 欢迎来到 BSD 的世界！](.gitbook/assets/web-logo.png)
 
 🎉 欢迎来到 BSD 的世界！
 
-FreeBSD 是一款真正自由（Liberty）的 **操作系统**，在这波谲云诡的世界中仍然坚守 BSD UNIX 哲学——**恪守古老的法则，追寻真正的自由。**
+FreeBSD 是一款真正自由（Liberty）的 **操作系统**，在这波谲云诡的世界中仍然坚守 BSD UNIX 哲学——**恪守古老的法则，追寻真正的自由**。
 
-“入门”本是一种快乐，“跑路”亦是一种豁达。“本乘兴而行，兴尽而反，何必 FreeBSD 邪！”（化用房玄龄.晋书·王羲之传附王徽之传 [M].中华书局，1974）
+“入门”本是一种快乐，“跑路”亦是一种豁达。“本乘兴而行，兴尽而反，何必 FreeBSD 邪！”（化用晋书·王羲之传附王徽之传[M]//房玄龄.晋书.北京:中华书局,1996）
 
 ## 内容提要
 
 >**注意**
 >
->本书还有约 60% 的章节尚待撰写（参见下文），既有章节已经通过了审阅和修订，但还不是正式版本。~~还是 EA 版呢（Early Access），或许永远都是……~~
+> 本书约有 60% 的章节尚未完成（详见下文），已有的章节虽经审阅和修订，但仍非最终版本。
 
-这是一本开源的 FreeBSD 操作系统研究书籍，还包含一些关于 OpenBSD、NetBSD 等 Berkeley Unix 家族系统的导论章节。
+本书是一本关于 FreeBSD 操作系统的开源研究著作，同时包含 OpenBSD、NetBSD 等 Berkeley Unix 家族系统的导论章节。
 
 [~~FreeBSD 项目即将归档（Archived）~~，为了保护我们心爱的操作系统……我们能做的事情就是，写一本书！](https://www.bilibili.com/bangumi/media/md3068)（化用《Love Live! School Idol Project》中的经典口号）
 
-
 ## 关于作者
 
-本书是 **FreeBSD 中文社区** 许多人共同努力的成果。
+本书由 FreeBSD 中文社区多位成员共同编写完成。
 
-- FreeBSD 中文社区 **首要** 联系方式为 **QQ 群**：[787969044](https://qm.qq.com/q/cX5mpJ36gg)（点击加群）
+![微信公众号](.gitbook/assets/wechatnew.png)
+
+微信公众号：bsdcn2018
+
+- FreeBSD 中文社区主要联系方式为 QQ 群：[787969044](https://qm.qq.com/q/cX5mpJ36gg)
 
 ![FreeBSD 中文社区 QQ 群](.gitbook/assets/2025-qq.png)
 
-- 微信群：由于微信平台的限制，须先加入 QQ 群，再联系群主获取新鲜的入群二维码。
-- Discord：<https://discord.gg/j7VhWrhp3e>（需代理，可通过网页使用）
+- 微信群：受微信平台限制，需先加入 QQ 群，再联系群主获取最新入群二维码。
+- Discord：<https://discord.gg/j7VhWrhp3e>（需代理，可通过网页端访问）
 - Telegram 群组：[https://t.me/oh_my_BSD](https://t.me/oh_my_BSD)（需代理）
-
 
 ## 电子文档
 
-目前网站提供了 PDF 和 EPUB 格式的电子文档：
+本书提供 PDF 和 EPUB 两种格式的电子文档：
 
-- PDF（适用于印刷及电脑端离线阅读）下载地址：<https://docs.bsdcn.org/bsdbook.pdf> ![](https://img.shields.io/website?url=https%3A%2F%2Fdocs.bsdcn.org%2Fbsdbook.pdf&up_message=%E6%96%87%E4%BB%B6%E5%8F%AF%E7%94%A8&down_message=%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%AF%E7%94%A8&style=for-the-badge&label=%E6%96%87%E6%A1%A3%E7%8A%B6%E6%80%81)
+- PDF（适用于印刷及桌面端离线阅读）下载地址：<https://docs.bsdcn.org/bsdbook.pdf> ![PDF 文件状态](https://img.shields.io/website?url=https%3A%2F%2Fdocs.bsdcn.org%2Fbsdbook.pdf&up_message=%E6%96%87%E4%BB%B6%E5%8F%AF%E7%94%A8&down_message=%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%AF%E7%94%A8&style=for-the-badge&label=%E6%96%87%E6%A1%A3%E7%8A%B6%E6%80%81)
 
-- EPUB（适用于移动端离线阅读）下载地址：<https://docs.bsdcn.org/bsdbook.epub> ![](https://img.shields.io/website?url=https%3A%2F%2Fdocs.bsdcn.org%2Fbsdbook.epub&up_message=%E6%96%87%E4%BB%B6%E5%8F%AF%E7%94%A8&down_message=%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%AF%E7%94%A8&style=for-the-badge&label=%E6%96%87%E6%A1%A3%E7%8A%B6%E6%80%81)
-
+- EPUB（适用于移动端离线阅读）下载地址：<https://docs.bsdcn.org/bsdbook.epub> ![EPUB 文件状态](https://img.shields.io/website?url=https%3A%2F%2Fdocs.bsdcn.org%2Fbsdbook.epub&up_message=%E6%96%87%E4%BB%B6%E5%8F%AF%E7%94%A8&down_message=%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%AF%E7%94%A8&style=for-the-badge&label=%E6%96%87%E6%A1%A3%E7%8A%B6%E6%80%81)
 
 >**注意**
 >
->上面的网址是 ***docs*** 开头的而不是 ***book*** ！
+> 以上下载地址以 `docs.bsdcn.org` 域名开头，非 `book.bsdcn.org`。
 
-EPUB 格式文档在手机上可使用 [微信读书](https://play.google.com/store/apps/details?id=com.tencent.weread&hl=zh) 打开，其格式显示较为完整；在电脑上则可使用 [CAJViewer 9](https://cajviewer.cnki.net/download.html) 打开。
+EPUB 格式文档在移动端可使用 [微信读书](https://play.google.com/store/apps/details?id=com.tencent.weread&hl=zh) 打开，格式显示完整；在桌面端可使用 [CAJViewer 9](https://cajviewer.cnki.net/download.html) 打开。
 
-上述电子文档始终反映实时的网页内容，随 Git 提交而 **实时更新**（但其文件名不会发生变化）。
+电子文档内容与网页版实时同步，随 Git 提交更新，文件名保持不变。
 
-电子书的生成由 [safreya](https://github.com/safreya) 开发的 [GitBook PDF/EPUB 导出工具](https://github.com/FreeBSD-Ask/gitbook-pdf-export) 提供支持。
+电子书生成由 [safreya](https://github.com/safreya) 开发的 [GitBook PDF/EPUB 导出工具](https://github.com/FreeBSD-Ask/gitbook-pdf-export) 提供支持，该工具可将 GitBook 格式内容转换为 PDF 和 EPUB 格式。
 
 ## 部署地址
 
-本书目前部署了三个域名以供访问，分别使用不同的网站架构：
+本书通过三个域名提供访问服务，各域名使用不同网站架构：
 
 - <https://book.bsdcn.org>
 - <https://docs.bsdcn.org>
 - <https://doc.bsdcn.org>（境内访问速度较佳）
 
-除此之外，FreeBSD 中文社区未对本书进行任何部署。我们唯一的域名只有 “bsdcn.org”。
+FreeBSD 中文社区未通过其他域名部署本书，唯一官方域名为 `bsdcn.org`。
 
 ## 意见反馈
 
-由于编者水平所限，书中缺点和谬误之处自不可免。
+受编者水平所限，书中难免存在疏漏与错误。
 
-如遇本书相关问题或网站技术问题：请发送邮件至 ykla [yklaxds@gmail.com](mailto:yklaxds@gmail.com)。关于本书内容问题，欢迎通过在桌面端网页右下方（或底部左下方）当前页面的 GitHub 直接提交 PR。
+如遇内容问题或网站技术问题，请发送邮件至 ykla [yklaxds@gmail.com](mailto:yklaxds@gmail.com)。关于内容问题，亦可通过 GitHub 提交 PR，入口位于桌面端网页当前页面的右下角或底部左下角。
 
-除此外有关中文社区的问题烦请加入 QQ 群后再联系 QQ 群主。
+社区相关问题请加入 QQ 群后联系群主。
 
-为了建设一个友爱、希望与和平的社区环境，请确保您的行为符合 [FreeBSD 中文社区行为规范（CoC）](https://docs.bsdcn.org/CODE_OF_CONDUCT) 及其精神。
+请遵循 [FreeBSD 中文社区行为规范（CoC）](https://docs.bsdcn.org/CODE_OF_CONDUCT)。
 
-由于架构设计原因，您必须使用 GitHub 账户登录方可留言，并且您在 docs 上的评论将会公开到 GitHub 存储库 [Handbook-giscus-discussions](https://github.com/FreeBSD-Ask/Handbook-giscus-discussions) 的 Discussions 中，您可自行前往上述位置管理您的历史留言。
+留言功能需使用 GitHub 账户登录，评论将公开至 GitHub 存储库 [Handbook-giscus-discussions](https://github.com/FreeBSD-Ask/Handbook-giscus-discussions) 的 Discussions 板块，可前往该位置管理历史留言。
 
 ## 目标与方向
 
@@ -79,15 +80,15 @@ EPUB 格式文档在手机上可使用 [微信读书](https://play.google.com/st
 
 ## 捐赠
 
-请优先捐赠 FreeBSD 基金会！
+请优先考虑向 FreeBSD 基金会捐赠。
 
-![](.gitbook/assets/proud_donor.png)
+![捐赠 FreeBSD 基金会](.gitbook/assets/proud_donor.png)
 
-[点此捐赠 FreeBSD 基金会](https://freebsdfoundation.org/donate-to-freebsd-foundation/)
+[前往捐赠 FreeBSD 基金会](https://freebsdfoundation.org/donate-to-freebsd-foundation/)
 
-需要你持有 VISA 信用卡：请在捐赠页面下使用 Amazon Pay 或 Google Pay，经测试可用。您也可以申请一张万事达品牌的二类借记卡（储蓄卡），同样也可以便捷支付。
+支付方式支持：VISA 信用卡（可通过 Amazon Pay 或 Google Pay）、万事达品牌借记卡。
 
-你还可以通过必应搜索的 Rewards 积分 [对 FreeBSD 基金会进行捐赠](https://rewards.bing.com/redeem/000999036000?causeId=840-841545163&&PC=EMMX01)。也可以用该方式 [捐赠 NetBSD 基金会](https://rewards.bing.com/redeem/000999036000?causeId=840-134134071&PC=EMMX01)。
+此外，可通过 Bing Rewards 积分 [对 FreeBSD 基金会进行捐赠](https://rewards.bing.com/redeem/000999036000?causeId=840-841545163&&PC=EMMX01)。Bing Rewards 是微软必应搜索提供的积分计划。同方式亦可 [捐赠 NetBSD 基金会](https://rewards.bing.com/redeem/000999036000?causeId=840-134134071&PC=EMMX01)。
 
 ## 贡献者
 
@@ -95,13 +96,13 @@ EPUB 格式文档在手机上可使用 [微信读书](https://play.google.com/st
 
 ## 授权协议与法律声明
 
-本项目采用《CC BY 4.0 署名 4.0 协议国际版》，详见 [署名 4.0 协议国际版法律文本](https://creativecommons.org/licenses/by/4.0/legalcode.zh-hans)。
+本项目采用《CC BY 4.0 署名 4.0 协议国际版》，核心条款包括：署名——允许对作品进行复制、发行、修改、再创作，需保留原作者署名，详见 [署名 4.0 协议国际版法律文本](https://creativecommons.org/licenses/by/4.0/legalcode.zh-hans)。
 
-为识别目的，本作品中引用的第三方商标（如 ®）、商号、服务标志（如 ™）、商品外观及版权材料（如 ©）等所有商业标识与知识产权内容，其相关权利均由各自合法权利人独立持有并受法律保护。前述引用仅为说明与指称之目的，不构成任何商业性使用、关联背书或法律授权，亦不视为对相关权利的限制或影响。
+本作品引用的第三方商标、商号、服务标志、商品外观及版权材料，其相关权利均由各自权利人持有。前述引用仅为说明与指称之目的。
 
-本作品出于说明、评论或教学目的，可能合理引用（包括但不限于文字、图像、数据等）了来源于第三方的内容（例如官方网站及其他公开网站、出版物等）。此类引用的知识产权仍归属原始权利人所有。相关引用均出于善意，符合合理使用原则，并非意在侵犯原作者或权利人的合法权益。
+为说明、评论或教学目的，本作品合理引用第三方内容（文字、图像、数据等），知识产权归属原始权利人。
 
-作品中演示或提及的任何第三方软件、源代码及文档，其全部知识产权（包括但不限于著作权、专利、商标与商业秘密）均由原权利人完整保留。如果您相信您的作品以侵犯版权的方式被复制或粘贴在我们的项目中，请通过电子邮件地址 ykla [yklaxds@gmail.com](mailto:yklaxds@gmail.com) 进行联系。我们将妥善处理。
+作品中涉及的第三方软件、源代码及文档，知识产权由原权利人保留。如认为本作品存在侵权情形，请通过电子邮件 ykla [yklaxds@gmail.com](mailto:yklaxds@gmail.com) 联系。
 
 除特别注明外，本书中的文字、图表等内容依据 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 协议发布。
 
@@ -113,7 +114,7 @@ EPUB 格式文档在手机上可使用 [微信读书](https://play.google.com/st
 
 ## 项目历史
 
-《FreeBSD 从入门到跑路》肇始于 2021 年 3 月 14 日，其原型最早可追溯至 ykla 于 2020 年 12 月 31 日发表的文章《FreeBSD 艺术科学哲学导论》。
+《FreeBSD 从入门到跑路》始于 2021 年 3 月 14 日，其原型可追溯至 ykla 于 2020 年 12 月 31 日发表的文章《FreeBSD 艺术科学哲学导论》。
 
 <!-- GA_STATS:START -->
 
@@ -121,21 +122,21 @@ EPUB 格式文档在手机上可使用 [微信读书](https://play.google.com/st
 
 自 2022 年 6 月 1 日以降，本书的访问情况如下：
 
-| 指标           | 统计数据     |
-|:---------------:|:-------------:|
-| 用户总数       | 43,644 位  |
-| 会话数         | 91,109 次 |
-| 浏览次数       | 629,751 次 |
-| 平均会话时长   | 8 分 54 秒 |
+| 指标 | 统计数据 |
+| ---- | -------- |
+| 用户总数 | 46,052 位 |
+| 会话数 | 94,796 次 |
+| 浏览次数 | 641,611 次 |
+| 平均会话时长 | 8 分 45 秒 |
 
 <!-- GA_STATS:END -->
 
 <!-- GA_BADGES:START -->
 
-![总用户数](https://img.shields.io/badge/总用户数-43,644-green)
-![会话数](https://img.shields.io/badge/会话数-91,109-orange)
-![浏览次数](https://img.shields.io/badge/浏览次数-629,751-blue)
-![平均会话时长](https://img.shields.io/badge/平均会话时长-8min54s-purple)
+![总用户数](https://img.shields.io/badge/总用户数-46,052-green)
+![会话数](https://img.shields.io/badge/会话数-94,796-orange)
+![浏览次数](https://img.shields.io/badge/浏览次数-641,611-blue)
+![平均会话时长](https://img.shields.io/badge/平均会话时长-8min45s-purple)
 
 <!-- GA_BADGES:END -->
 
@@ -150,30 +151,30 @@ EPUB 格式文档在手机上可使用 [微信读书](https://play.google.com/st
 ---
 
 <!-- CHINESE_CHAR_COUNT_START -->
-文档总字数：92.33 万字；
+文档总字数：99.54 万字；
 
-统计时间：2026-03-01 13:40:23（北京时间）
+统计时间：2026-04-19 14:01:07（北京时间）
 
-与上周相比：−312 字（−0.03%）
+与上周相比：+994 字（+0.10%）
 
-与上月相比：+8575 字（+0.94%）
+与上月相比：+5.98 万字（+6.39%）
 
 <!-- CHINESE_CHAR_COUNT_END -->
 
-
 <!-- commit-progress-start -->
-**第 3 版编纂进度:**   （人工提交数: 1324 / 3533）
+**第 3 版编纂进度:**   （人工提交数: 1446 / 3533）
 
 ![进度徽章](.gitbook/assets/progress.svg)
 
-距离第 3 版还需提交: 2209 次
+距离第 3 版还需提交: 2087 次
 
 提交统计（历史）:
-
-- 人工提交: 8390
-- 机器人提交: 309
+- 人工提交: 8512
+- 机器人提交: 335
 <!-- commit-progress-end -->
 
----
+## ⭐ 图
 
-若本书对你有帮助，欢迎给本书所在的 [GitHub 项目存储库](https://github.com/FreeBSD-Ask/FreeBSD-Ask) 加颗 ⭐。
+![⭐ 图](https://api.star-history.com/image?repos=FreeBSD-Ask/FreeBSD-Ask&type=date&legend=top-left)
+
+若本书对您有所帮助，欢迎为 [GitHub 项目存储库](https://github.com/FreeBSD-Ask/FreeBSD-Ask) 加星标 ⭐。

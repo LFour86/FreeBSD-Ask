@@ -1,9 +1,60 @@
 # 编辑日志
 
+## 2026 年第二季度
+
+- 2026.4.19
+  - 审阅前言及其他
+  - 审阅第 1-3 章
+- 2026.4.8
+  - 删除赘余的人称和表达
+  - 进行润色以符合出版物要求
+- 2026.4.5
+  - 格式化全书
+- 2026.4.3
+  - 规范全书参考文献
+- 2026.4.1
+  - 校对全书
+
 ## 2026 年第一季度
 
+- 2026.3.31
+  - 校对 1.1-8.6 节
+- 2026.3.29
+  - 删除“21.5 Deepin 兼容层”，已经失效且难以增补
+  - 审阅全书在线的参考文献，确保其可访问性
+  - 根据术语在线 <https://www.termonline.cn/> 平台审定全书术语
+- 2026.3.28
+  - 标准化全书的参考文献
+  - 标准化全书的图片描述部分
+  - 消除 markdownlint 报错，使 markdown 标准化
+- 2026.3.24
+  - 进一步审阅全书
+- 2026.3.22
+  - 为全书补全目录结构图
+- 2026.3.21
+  - 为所有参考资料进行注解
+  - 为全书增补课后习题
+- 2026.3.19
+  - 全面修订所有章节，旨在靠近专业出版物
+- 2026.3.18
+  - 全面修订第 1 章，旨在靠近专业出版物
+- 2026.3.11
+  - 将“13.1 启动引导器及配置文件（loader.conf）”中“TTY 中文控制台”移动到“8.7 系统字体替换”
+  - 截至今天，本书导出的 PDF 文档为 2026 页
+- 2026.3.10
+  - “13.1 启动引导器及配置文件（loader.conf）”新增“loader.conf 系统启动配置信息”
+  - 新增“13.8 设备资源提示文件（device.hints）”
+  - “13.2 管理 FreeBSD 中的服务”易名为“13.2 init.rc 服务”，非 rc 服务部分拆分到下面章节
+  - “13.2 init.rc 服务”：完全重写
+  - 新增“13.9 crontab 及定时任务文件（periodic.conf）”
+  - 新增“13.10 内核状态默认配置文件（sysctl.conf）”
+- 2026.3.9
+  - “4.10 系统目录结构”合并入“4.1 Windows 用户迁移指南”，内容重合
+  - “13.4 SSH 配置和相关工具”新增“附录：OpenSSH 服务端配置详解”
+- 2026.3.8
+  - 新增“18.5 嵌入式开发”
 - 2026.3.3
-  - 删除《16.2 MinIO 对象存储服务》，原因：由于上游不再维护，其将从 Ports 删除
+  - 删除《16.2 MinIO 对象存储服务》，原因：由于上游不再维护，将其从 Ports 删除
 - 2026.3.2
   - 将“22.4 LLVM / Clang 概述”合并入“22.15 在 FreeBSD 上开发 C/C++”，成为“22.4 在 FreeBSD 上开发 C/C++”
   - 将“22.2 如何开发一个 Port”、“22.14 利用脚本自动生成 BSD libc 库文本”合并入“22.3 如何参与 FreeBSD 开发”
@@ -22,7 +73,7 @@
   - 将“5.3 gitup 的用法”作删除处理。原因：缺乏实质性维护近 2 年。
   - 删除“21.5 基于 archlinux-pacman 的 Arch Linux 兼容层（拟删除）”。原因：存在 Bug 287690 [sysutils/pacman: The archlinux flavor cannot be built or installed.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=287690) 无法得到解决
   - 删除“6.10 Budgie（拟删除）”，原因：欠缺维护，存在 [Bug 289898 x11/budgie: After logging in with LightDM, it crashes and then shows a black screen](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289898) 无法得到解决
-  - 将“附录：登录界面主题”从“6.3 KDE 6（X11 会话）”彻底删除，因为软件源中仅存在 Port x11-themes/sddm-freebsd-black-theme，且无人维护，存在 [x11-themes/sddm-freebsd-black-theme incompatible with SDDM 0.21.0 (Qt6 greeter)](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=293449) 无法得到解决
+  - 将“附录：登录界面主题”从“6.3 KDE 6（X11 会话）”彻底删除，因为软件源中仅存在 Port x11-themes/sddm-freebsd-black-theme，且无人维护，存在 [x11-themes/sddm-freebsd-black-theme incompatible with SDDM 0.21.0 (Qt6 greeter)](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=293449) 的问题无法得到解决
   - 注意到 Lumina 实际上不存在任何维护者，且长期未更新，作删除处理。
   - 删除“7.5 Window Maker”，Bug 较多，基本无法使用
   - 删除“7.6 Fluxbox”，Bug 较多，基本无法使用
@@ -47,7 +98,7 @@
   - 增补“6.2 NVIDIA 显卡驱动”，在台式机 3060 显卡上进行实际测试
   - 为其余链接添加部分存档
 - 2026.1.18
-  - 引入归档 CI，同时再为其余链接添加部分存档
+  - 引入归档 CI，同时为其余链接添加部分存档
 - 2026.1.17
   - “26.2 安装 OpenBSD”新增“OpenBSD 自动分区的源代码分析”
 - 2026.1.16
@@ -147,10 +198,10 @@
     - 根据编纂发现，提交 [Bug 291649 Submitted – COPYRIGHT in login classes/login.conf(5) does not work](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291649)
 - 2025.12.13
   - 重写“7.2 IceWM”
-  - “10.3 Mihomo（Clash）”新增“RC 脚本”。已向 Ports 维护者发出请求合并（[Bug 291295 - net/mihomo: Add rc.conf and some Post-installation](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291295) [备份](https://web.archive.org/web/20260115020637/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291295) ），但未予回应。
+  - “10.3 Mihomo（Clash）”新增“RC 脚本”。已向 Ports 维护者发出请求合并（[Bug 291295 - net/mihomo: Add rc.conf and some Post-installation](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291295)），但未予回应。
   - 将“4.10 文件系统的挂载和卸载”、“4.11 磁盘结构”合并到“4.10 文件系统基础”
   - 将“4.12 目录结构”拆分到“4.11 系统目录结构”和“24.6 FreeBSD 源代码目录结构”
-  - 根据编纂发现，增补 [Bug 236786 FreeBSD -.iso files not support written to USB drive](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=236786) [备份](https://web.archive.org/web/20260115023515/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=236786)
+  - 根据编纂发现，增补 [Bug 236786 FreeBSD -.iso files not support written to USB drive](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=236786)
 - 2025.12.8
   - “5.1 FreeBSD 镜像站现状”新增“拒绝开放的可能性原因分析”
 - 2025.12.7
@@ -159,7 +210,7 @@
 - 2025.12.6
   - 将“5.9 使用 pkgbase 更新 FreeBSD”完全重写为“5.9 使用 ZFS 启动环境更新 FreeBSD 并实现多版本共存”
 - 2025.12.5
-  - 新增 ZFS 脚本，可用于查看、创建、删除、恢复 ZFS 快照。[FreeBSD-Ask/zfs-snap 项目地址](https://github.com/FreeBSD-Ask/zfs-snap) [备份](https://web.archive.org/web/20260114055056/https://github.com/FreeBSD-Ask/zfs-snap)
+  - 新增 ZFS 脚本，可用于查看、创建、删除、恢复 ZFS 快照。[FreeBSD-Ask/zfs-snap 项目地址](https://github.com/FreeBSD-Ask/zfs-snap)
   - 同时将 ZFS 脚本部署到了 <https://docs.bsdcn.org/zfs.sh>，方便直接 `fetch` 下载使用
   - “25.4 ZFS 启动环境”新增“附录：多版本/系统共存的 ZFS 版本问题”
 - 2025.12.4
@@ -172,7 +223,7 @@
   - 将“23.3 磁盘扩容和分区调整”中的 ZFS 部分拆分到“第 25 章 ZFS 文件系统”，原有章节调整为“23.3 UFS 文件系统”
   - “24.2 机器相关的内核选项”引入“powerpc（32/64 位）机器相关配置”“64 位 RISC-V 机器相关配置”“arm64（aarch64）机器相关配置”
   - 新增“24.4 GENERIC 内核选项（amd64）”
-  - “24.1 FreeBSD 内核选项概述”新增“附录：man config(5) 中文”“附录：man [device.hints(5)](https://man.freebsd.org/cgi/man.cgi?query=device.hints) [备份](https://web.archive.org/web/20260115015408/https://man.freebsd.org/cgi/man.cgi?query=device.hints) 中文”
+  - “24.1 FreeBSD 内核选项概述”新增“附录：man config(5) 中文”“附录：man [device.hints(5)](https://man.freebsd.org/cgi/man.cgi?query=device.hints) 中文”
   - 将“22.15 在 Linux 上构建 FreeBSD”移动到“第 24 章 FreeBSD 内核”
   - 将“2.1-2.9”压缩归档至附录 Ⅱ“FreeBSD 13/14 安装指南”
   - 新增“2.2 安装 FreeBSD 15”
@@ -191,11 +242,11 @@
 - 2025.11.26
   - 全面重写“致读者”
   - “24.3 机器无关的内核选项”引入 75%（按行数计）
-    - 根据编纂发现，提交 [Fix typos and unify Realtek terminology](https://github.com/freebsd/freebsd-src/pull/1901) [备份](https://web.archive.org/web/20260114055149/https://github.com/freebsd/freebsd-src/pull/1901)
+    - 根据编纂发现，提交 [Fix typos and unify Realtek terminology](https://github.com/freebsd/freebsd-src/pull/1901)
 - 2025.11.25
   - “24.3 机器无关的内核选项”引入 69%（按行数计）
-    - 根据编纂发现，提交 [NOTES: Fix a typo in a comments](https://github.com/freebsd/freebsd-src/pull/1899) [备份](https://web.archive.org/web/20260114055609/https://github.com/freebsd/freebsd-src/pull/1899)
-    - 根据编纂发现，提交 [NOTES: Remove duplicate options KCSAN entries](https://github.com/freebsd/freebsd-src/pull/1900) [备份](https://web.archive.org/web/20260114055153/https://github.com/freebsd/freebsd-src/pull/1900)
+    - 根据编纂发现，提交 [NOTES: Fix a typo in a comments](https://github.com/freebsd/freebsd-src/pull/1899)
+    - 根据编纂发现，提交 [NOTES: Remove duplicate options KCSAN entries](https://github.com/freebsd/freebsd-src/pull/1900)
   - 由于内容不足以构成一章，将“第 24 章 DragonFly BSD 入门”压缩到附录 Ⅱ“DragonFly BSD 导论”
   - 新增“第 24 章 FreeBSD 内核”，将“22.16 FreeBSD 内核配置选项”分别拆分为：
     - 24.1 FreeBSD 内核选项概述
@@ -214,10 +265,10 @@
   - “5.4 使用 pkg 管理二进制包”重写“使用 pkg 安装软件”
 - 2025.11.17
   - “4.1 Windows 用户迁移指南”新增“深入阅读”
-  - FreeBSD 安装镜像缺乏 kmod 的离线包，提交 [Bug 291052 - Request to offline-distribute kernel modules and pkg(8) repositories in iso and img images.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291052) [备份](https://web.archive.org/web/20260115023447/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291052)
+  - FreeBSD 安装镜像缺乏 kmod 的离线包，提交 [Bug 291052 - Request to offline-distribute kernel modules and pkg(8) repositories in iso and img images.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=291052)
 - 2025.11.14
   - “3.3 使用 Virtual Box 安装 FreeBSD”增补“网络设置”
-  - Port [net/wutil](https://www.freshports.org/net/wutil) [备份](https://web.archive.org/web/20260114055124/https://www.freshports.org/net/wutil) 测试失败，提交 issue [wutil: no wpa ctrl interface on default path, provide --ctrl-interface: No error: 0](https://github.com/MainKt/wutil/issues/2) [备份](https://web.archive.org/web/20260114055632/https://github.com/MainKt/wutil/issues/2)
+  - Port [net/wutil](https://www.freshports.org/net/wutil) 测试失败，提交 issue [wutil: no wpa ctrl interface on default path, provide --ctrl-interface: No error: 0](https://github.com/MainKt/wutil/issues/2)
   - “6.3 KDE6（X11）”新增“附录：解决开机时总是自动打开特定程序”
 - 2025.11.13
   - CSP 配置错误，已经移除
@@ -228,9 +279,9 @@
 - 2025.11.9
   - 除特别注明外，本书的文字、图表等内容依据 CC BY 4.0 协议发布。书中所有代码示例依据 BSD 二条款许可发布。
   - 移除“12.5 无线网络环境下使用 bhyve”与“12.2 使用 bhyve 安装 Windows 11（vm-bhyve）”的“可选配置”章节。引用不符合规范
-  - 将上面移除的内容涉及的 wiki 全部翻译，并放在 [vm-bhyve Wiki](https://book.bsdcn.org/wen-zhang/wen-zhang/vm-bhyve) [备份](https://web.archive.org/web/20260114055841/https://book.bsdcn.org/wen-zhang/wen-zhang/vm-bhyve)
+  - 将上面移除的内容涉及的 wiki 全部翻译，并放在 [vm-bhyve Wiki](https://book.bsdcn.org/wen-zhang/wen-zhang/vm-bhyve)
 - 2025.11.8
-  - 由于 FreeBSD 的默认 ESP 不符合 UEFI 规范，提交 [Bug 290857 - bsdinstall: The ESP on FreeBSD Should Be FAT32 Instead of FAT16: D28897 Is Actually Ineffective](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=290857) [备份](https://web.archive.org/web/20260115020642/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=290857)
+  - 由于 FreeBSD 的默认 ESP 不符合 UEFI 规范，提交 [Bug 290857 - bsdinstall: The ESP on FreeBSD Should Be FAT32 Instead of FAT16: D28897 Is Actually Ineffective](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=290857)
 - 2025.11.5
   - “26.5 桌面和其他软件”新增故障排除，解决“KDE 无声音”
   - 增补贡献指南
@@ -283,17 +334,17 @@
 
 - 2025.9.30
   - “4.9 sudo 和 doas”新增“sudo-rs”
-  - 由于 Bug 287690 [sysutils/pacman: The archlinux flavor cannot be built or installed.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=287690) ，本文暂不可用，若在六个月内（2026-04-01 日前）未得到解决将删除“21.5 ArchLinux 兼容层（基于 archlinux-pacman）”。
-  - budgie 主要维护者 Olivier Duchateau 继续更新了，但无法正常登录桌面。Bug 289898 [x11/budgie: After logging in with LightDM, it crashes and then shows a black screen.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289898) [备份](https://web.archive.org/web/20260115025214/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289898) 。若在六个月内（2026-04-01 日前）未得到解决将删除“6.10 Budgie”。
+  - 由于 Bug 287690 [sysutils/pacman: The archlinux flavor cannot be built or installed.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=287690)，本文暂不可用，若在六个月内（2026-04-01 日前）未得到解决将删除“21.5 ArchLinux 兼容层（基于 archlinux-pacman）”。
+  - budgie 主要维护者 Olivier Duchateau 继续更新了，但无法正常登录桌面。Bug 289898 [x11/budgie: After logging in with LightDM, it crashes and then shows a black screen.](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289898)。若在六个月内（2026-04-01 日前）未得到解决将删除“6.10 Budgie”。
   - “19.1 PostgreSQL”更新至“PostgreSQL 18”
 - 2025.9.28
-  - 2025 FreeBSD 社区调查报告.pdf https://www.alipan.com/s/6vUR7W6xfpC 提取码: nq19 点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。
-  - 上面是中文版本，原文在 [这](https://freebsdfoundation.org/wp-content/uploads/2025/09/FreeBSD-2025-Community-Survey-Report-Final.pdf) [备份](https://web.archive.org/web/20260102000529/https://freebsdfoundation.org/wp-content/uploads/2025/09/FreeBSD-2025-Community-Survey-Report-Final.pdf)。
+  - 2025 FreeBSD 社区调查报告.pdf <https://www.alipan.com/s/6vUR7W6xfpC> 提取码: nq19 点击链接保存，或者复制本段内容，打开「阿里云盘」APP，无需下载极速在线查看，视频原画倍速播放。
+  - 上面是中文版本，原文在 [这](https://freebsdfoundation.org/wp-content/uploads/2025/09/FreeBSD-2025-Community-Survey-Report-Final.pdf)。
 - 2025.9.27
-  - 针对 fwget 工具无法为 RTL8125 2.5GbE 以太网卡安装驱动的问题提交：[Bug 289862 - fwget(8) does not support Realtek Ethernet (RTL8125 2.5GbE, realtek-re-kmod) despite packages being available](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289862) 。
+  - 针对 fwget 工具无法为 RTL8125 2.5GbE 以太网卡安装驱动的问题提交：[Bug 289862 - fwget(8) does not support Realtek Ethernet (RTL8125 2.5GbE, realtek-re-kmod) despite packages being available](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289862)。
 - 2025.9.23
   - 在安装过程中直接引入 video 组。
-  - 切勿使用 freebsd-update 升级至 15.0-ALPHA3 版本。该操作会在安装 libsys 之前先安装新版 libc，从而导致系统损坏。我们将修复 freebsd-update 以确保按正确顺序安装库文件，但在相关补丁（及相应的勘误通知）发布之前，此升级方式暂不可用。—— Colin Percival FreeBSD 发布工程负责人& EC2 平台维护者。参见 <https://lists.freebsd.org/archives/freebsd-stable/2025-September/003244.html>
+  - 切勿使用 freebsd-update 升级至 15.0-ALPHA3 版本。该操作会在安装 libsys 之前先安装新版 libc，从而导致系统损坏。我们将修复 freebsd-update 以确保按正确顺序安装库文件，但在相关补丁（及相应的勘误通知）发布之前，此升级方式暂不可用。—— Colin Percival FreeBSD 发布工程负责人& EC2 平台维护者。参见：003244[EB/OL]. [2026-03-26]. <https://lists.freebsd.org/archives/freebsd-stable/2025-September/003244.html>
 - 2025.9.22
   - 如果普通用户没有被加入到 video 组（wheel 还不够），那么在 KDE 的设置中，“关于此系统”中的“显卡驱动”将永远显示为“llvmpipe”。且 Wayland 下普通用户将无权调用 GPU。
   - “6.3 KDE6（X11）”新增“附录：展开任务栏图标”
@@ -306,8 +357,8 @@
   - 重写“9.1 音频设备配置”
   - 新增“6.16 KDE6（Wayland）”
 - 2025.8.31
-  - 目前将无线电（WiFi）区域码设置为 `CN NONE`（`create_args_wlan0="country CN regdomain NONE"`）是不正确的，因为 FreeBSD 的文件没有得到维护，实际上会导致无法协商到 WiFi5（FreeBSD 为 VHT40），速率始终是 11a，不是应有的 11ac；并且对于 DFS，配置写的也不正确。已经报告 Bug 至 [Missing CN regulatory domain and 11ac/DFS support in regdomain.xml](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289202) 。临时解决方案：如果你的信道 > 48，需要专门在 `/etc/rc.conf` 中修改或写入 `create_args_wlan0="country HR regdomain ETSI"`；如果你的信道 <= 48，且存在 `create_args_wlan0="country CN regdomain NONE"`，请将其删除，因为默认的 FCC US 配置可支持其 WiFi5 协议。经过测试，即使是 WiFi 6 路由器，开启 WPA3、160MHz，也是受支持的。按照以上临时方案进行配置，Intel AX200 网卡在 FreeBSD 14.3-RELEASE 上可成功协商至 11ac。
-  - 因 budgie 主要维护者 Olivier Duchateau 称已对此项目不感兴趣，放弃维护。且无人主动维护，目前核心组件 Port `sysutils/budgie-control-center` [被标记为](https://www.freshports.org/sysutils/budgie-control-center/)  `broken`（破损）。考虑在日后删除 6.10 Budgie。如果 6 个月内仍未得到修复将建议上游删除此项目，并从本书中移除此节。
+  - 目前将无线电（WiFi）区域码设置为 `CN NONE`（`create_args_wlan0="country CN regdomain NONE"`）是不正确的，因为 FreeBSD 的文件没有得到维护，实际上会导致无法协商到 WiFi5（FreeBSD 为 VHT40），速率始终是 11a，不是应有的 11ac；并且对于 DFS，配置写的也不正确。已经报告 Bug 至 [Missing CN regulatory domain and 11ac/DFS support in regdomain.xml](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289202)。临时解决方案：如果你的信道 > 48，需要专门在 `/etc/rc.conf` 中修改或写入 `create_args_wlan0="country HR regdomain ETSI"`；如果你的信道 <= 48，且存在 `create_args_wlan0="country CN regdomain NONE"`，请将其删除，因为默认的 FCC US 配置可支持其 WiFi5 协议。经过测试，即使是 WiFi 6 路由器，开启 WPA3、160MHz，也是受支持的。按照以上临时方案进行配置，Intel AX200 网卡在 FreeBSD 14.3-RELEASE 上可成功协商至 11ac。
+  - 因 budgie 主要维护者 Olivier Duchateau 称已对此项目不感兴趣，放弃维护。且无人主动维护，目前核心组件 Port `sysutils/budgie-control-center` [被标记为](https://www.freshports.org/sysutils/budgie-control-center/) `broken`（破损）。考虑在日后删除 6.10 Budgie。如果 6 个月内仍未得到修复将建议上游删除此项目，并从本书中移除此节。
 - 2025.8.24
   - 新增：“12.5 无线网络环境下使用 bhyve”
   - “4.2 Linux 用户迁移指南”新增“历史”
@@ -345,11 +396,10 @@
 - 2025.7.4
   - 新增：6.11 Wine
 
-
 ## 2025 年第二季度
 
 - 2025.6.24
-  - freebsd 14.3 的 wifi country select 有问题。选哪个都是这个报错：`Error while applying chosen settings  (unknown regdomain Expected  eval: Use: not found)` 参见 <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=287538>。替代方法是手动写，参照无线网络章节。
+  - freebsd 14.3 的 wifi country select 有问题。选哪个都是这个报错：`Error while applying chosen settings  (unknown regdomain Expected  eval: Use: not found)` 参见：Bug 287538 - Installer error on setting regdomain[EB/OL]. [2026-03-26]. <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=287538>。替代方法是手动写，参照无线网络章节。
 - 2025.6.23
   - 3.6 文本编辑器新增：microsoft-edit
 - 2025.6.21
@@ -375,7 +425,7 @@
 - 2025.6.15
   - 计划全面重写 FreeBSD 手册
 - 2025.6.14
-  - 重新引入：[贡献指南与开放任务](CONTRIBUTING.md) [备份](https://web.archive.org/web/20260115030855/https://contributing.md/)
+  - 重新引入：[贡献指南与开放任务](CONTRIBUTING.md)
 - 2025.6.13
   - 第 1.1 节 操作系统的历程：UNIX、Unix-like、Linux & FreeBSD 重写：什么是 Linux？
   - 第 1.1 节 操作系统的历程：UNIX、Unix-like、Linux & FreeBSD 新增：GNU 与自由软件运动
@@ -450,7 +500,7 @@
   - 由于电子邮件长期被忽视，今日分别致国际信函给“FreeBSD 基金会”（RD664821800CN）和“OpenBSD 基金会”（RD664821795CN），反馈目前的捐款渠道不畅之问题，以及呼吁关注中国大陆地区等
 - 2025.4.21
   - “第 5.6 节 QQ（Linux 版）”新增：解决 fcitx 中文输入法在 QQ 中不能使用的问题
-  
+
 ---
 
 - 2024.8.1-2025.4.20
@@ -484,7 +534,7 @@
   - 格式化“第 11.5 章 MySQL 数据库”
   - 删减占用篇幅较大的无用图片
 - 2025.4.13
-  - “第 16.5 节 WildFly”测试基本成功，但是注意补丁仍未合并到主线，详见 [Bug 285956 - java/wildfly: service start fail, illegal group name](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=285956) [备份](https://web.archive.org/web/20260115020631/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=285956) 。
+  - “第 16.5 节 WildFly”测试基本成功，但是注意补丁仍未合并到主线，详见 [Bug 285956 - java/wildfly: service start fail, illegal group name](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=285956)。
   - 新增“第 24.3 节 配置 DragonFly BSD”
   - 重写“第 24.2 节 安装 DragonFly BSD”
 - 2025.4.11
@@ -502,10 +552,10 @@
   - “桌面与中文环境常用软件”新增输入法
   - “桌面与中文环境常用软件”新增中文环境
   - NetBSD KDE 4 UEFI 下测试失败，还是黑屏，报错见 <https://gnats.netbsd.org/57554>
-  - “第 16.5 节 Wildfly”测试失败，见 [Bug 285956 - java/wildfly: service start fail, illegal group name](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=285956) [备份](https://web.archive.org/web/20260115020631/https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=285956)
+  - “第 16.5 节 Wildfly”测试失败，见 [Bug 285956 - java/wildfly: service start fail, illegal group name](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=285956)
 - 2025.4.7
   - 全译现有所有安装后说明
-  - 从 [2024.8-3533 次](https://github.com/FreeBSD-Ask/FreeBSD-Ask/commit/c4d657fb586f91e9f8664ee1181a2711f7350d17) [备份](https://web.archive.org/web/20260114060608/https://github.com/FreeBSD-Ask/FreeBSD-Ask/commit/c4d657fb586f91e9f8664ee1181a2711f7350d17) 开始，目前对全书初版已重写 94%（按 Commit 数），下同
+  - 从 [2024.8-3533 次](https://github.com/FreeBSD-Ask/FreeBSD-Ask/commit/c4d657fb586f91e9f8664ee1181a2711f7350d17) 开始，目前对全书初版已重写 94%（按 Commit 数），下同
   - 删除“第 11.3 节 散热器、风扇、鼓风机”，可能包含错误内容
 - 2025.4.6
   - “第 17.8 节 PostgreSQL 与 pgAdmin4”新增“深入 PostgreSQL 服务管理”
@@ -530,7 +580,6 @@
   - 测试“第 20.2 节 音视频播放器”：尝试播放电视剧《人民公仆》、尝试播放动漫《败犬女主太多了！》，测试通过
 - 2025.4.1
   - <https://mirrors.aliyun.com/freebsd-pkg/> 看起来早就失去同步。还是 2 月我提交 kmod 源以前的内容，故不写入
-
 
 ## 2025 年第一季度
 
@@ -557,7 +606,7 @@
 - 2025.3.24
   - 测试“第 4.2 节 安装 KDE6”，同 VMware 的虚拟显卡无兼容性问题。缩放、鼠标无缝切换均正常。注：USTC 的源可能有问题。
   - 重写“致谢”
-  - 根据 [clean-master/freebsdcn](https://github.com/clean-master/freebsdcn/graphs/contributors) [备份](https://web.archive.org/web/20260114055913/https://github.com/clean-master/freebsdcn/graphs/contributors)，将本项目的开始时间改正至 2021 年 3 月 14 日。同时明确 clean-master 清理大师的历史贡献。
+  - 根据 [clean-master/freebsdcn](https://github.com/clean-master/freebsdcn/graphs/contributors)，将本项目的开始时间改正至 2021 年 3 月 14 日。同时明确 clean-master 清理大师的历史贡献。
   - 重写“第 4.23 节 远程桌面管理”中的“使用 FreeBSD 远程其他机器”
 - 2025.3.23
   - 格式化全书。
@@ -637,7 +686,7 @@
 - 2025.2.24
    “第 6.2 节 ZFS”新增“ZFS 压缩”
    “第 23.5 节 Grub 及其他引导”新增“UEFI 与 efibootmgr”
-  - “第 3.2 节 FreeBSD 换源方式”新增“kernel modules（kmods）内核模块源：面向 FreeBSD 14.2 及更高版本（不含 15.0-CURRENT）”
+  - “第 3.2 节 FreeBSD 切换软件源方式”新增“kernel modules（kmods）内核模块源：面向 FreeBSD 14.2 及更高版本（不含 15.0-CURRENT）”
   - 从“第 2.10 节 手动安装双系统（先安装 FreeBSD）”拆分出“第 2.13 节 配置 rEFInd（双系统用）”
 - 2025.2.23
   - 新增“后记”
@@ -678,7 +727,7 @@
   - 添加“献词”
   - 添加“凡例”，将“序言”中非序言部分移动至此。
 - 2025.1.13
-  - 关闭 Issue [第 1.5 章，内容有误](https://github.com/FreeBSD-Ask/FreeBSD-Ask/issues/159) [备份](https://web.archive.org/web/20260114061032/https://github.com/FreeBSD-Ask/FreeBSD-Ask/issues/159)
+  - 关闭 Issue [第 1.5 章，内容有误](https://github.com/FreeBSD-Ask/FreeBSD-Ask/issues/159)
   - 新增“第 2.11 节 Qemu 安装 RISC-V FreeBSD（基于 x86 Windows）”
   - 新增“第 4.23 节 安装 Fluxbox”
   - 新增“第 4.24 节 安装 IceWM”
@@ -703,95 +752,94 @@
   - 新增“第 4.21 节 安装 LXDE”
   - 新增“第 4.22 节 安装 Window Maker”
   - “第 19.2 节 Linux 败局与 FreeBSD 败局”新增“为何不能选择 Linux 桌面操作系统？”
-- 2025.1.6  
-  - 新增“第 2.9 节 安装 FreeBSD——基于 Apple M1&Parallels Desktop 20”  
-  - 新增“第 2.10 节 手动安装双系统（先安装 FreeBSD）”  
+- 2025.1.6
+  - 新增“第 2.9 节 安装 FreeBSD——基于 Apple M1&Parallels Desktop 20”
+  - 新增“第 2.10 节 手动安装双系统（先安装 FreeBSD）”
   - “第 2.9 节 安装 FreeBSD——基于 Apple M1&Parallels Desktop 20”新增“虚拟机工具”
-
 
 ## 2024 年第四季度
 
-- 2024.12.22  
+- 2024.12.22
   - “第 2.4 节 安装 FreeBSD——基于 VMware Workstation Pro”新增“故障排除”
-- 2024.12.21  
-  - 新增“第 10.3 节 使用 BVCP 通过网页管理 BHyve”  
+- 2024.12.21
+  - 新增“第 10.3 节 使用 BVCP 通过网页管理 BHyve”
   - “序言”新增“存在即破烂（2025 代序）”
-- 2024.12.19  
-  - “第 6.3 节 磁盘扩容”新增“ZFS 磁盘扩容”一节  
-  - “第 10.3 节 使用 bhyve 安装 Windows 11”完全重写。  
-  - “第 2.3 节 安装 FreeBSD——基于 Virtual Box”补充图片  
-  - 为第 20 章相关软件包补充 port，删除失效软件包  
-  - 删除无实质性内容的“第 10.1 节 虚拟化简介”  
-  - “第 23.3 节 FreeBSD 中文 TTY 控制台”完全重写，验证通过  
-  - 新增“第 4.21 节 安装 KDE6”  
+- 2024.12.19
+  - “第 6.3 节 磁盘扩容”新增“ZFS 磁盘扩容”一节
+  - “第 10.3 节 使用 bhyve 安装 Windows 11”完全重写。
+  - “第 2.3 节 安装 FreeBSD——基于 Virtual Box”补充图片
+  - 为第 20 章相关软件包补充 port，删除失效软件包
+  - 删除无实质性内容的“第 10.1 节 虚拟化简介”
+  - “第 23.3 节 FreeBSD 中文 TTY 控制台”完全重写，验证通过
+  - 新增“第 4.21 节 安装 KDE6”
   - 删除“第 4.13 节 安装 Wayland （可选）”，无实质性内容
-- 2024.12.18  
-  - “第 2.4 节 安装 FreeBSD——基于 VMware Workstation Pro”新增“配置虚拟机”  
-  - “第 2.0 节 FreeBSD 安装图解”还原“怎么看你的硬件支持不支持呢？”一节  
-  - “第 1.3 节 为什么要使用 FreeBSD”新增“诚实与可信”一节  
-  - 将“编撰说明”、“参考资料”、“贡献者名单”合并为“序言”  
+- 2024.12.18
+  - “第 2.4 节 安装 FreeBSD——基于 VMware Workstation Pro”新增“配置虚拟机”
+  - “第 2.0 节 FreeBSD 安装图解”还原“怎么看你的硬件支持不支持呢？”一节
+  - “第 1.3 节 为什么要使用 FreeBSD”新增“诚实与可信”一节
+  - 将“编撰说明”、“参考资料”、“贡献者名单”合并为“序言”
   - “序言”新增“2021-2024 自序”
-- 2024.12.17  
-  - “第 2.0 节 FreeBSD 安装图解”新增“FreeBSD 镜像说明”一节  
-  - 将原“第 2.6 节 普通电脑下载安装哪个镜像，如何刻录镜像？”合并入“第 2.0 节 FreeBSD 安装图解”  
+- 2024.12.17
+  - “第 2.0 节 FreeBSD 安装图解”新增“FreeBSD 镜像说明”一节
+  - 将原“第 2.6 节 普通电脑下载安装哪个镜像，如何刻录镜像？”合并入“第 2.0 节 FreeBSD 安装图解”
   - 新增“第 1.8 节 谁在使用 FreeBSD？（中文社区版本）”
-- 2024.12.16  
-  - “第 26.1 节 安装”更新至 OpenBSD 7.6  
+- 2024.12.16
+  - “第 26.1 节 安装”更新至 OpenBSD 7.6
   - “第 26.4 节 桌面与其他软件”中 KDE5 在 OpenBSD 7.6 依旧测试失败，而且错误看起来更严重了
-- 2024.12.14  
+- 2024.12.14
   - 将文学故事章节 FreeBSD 相关内容重新上线
-- 2024.12.4  
+- 2024.12.4
   - 制作了视频教程《[001-Windows 11 安装 VMware17](https://www.bilibili.com/video/BV1Qji2YLEgS) 》、《[002-VMware17 安装 FreeBSD14.2](https://www.bilibili.com/video/BV1gji2YLEoC) 》《[003-FreeBSD14.2 安装 KDE5](https://www.bilibili.com/video/BV13ji2YLELM) 》、《[004-FreeBSD14.2 允许 root 登录 ssh](https://www.bilibili.com/video/BV1gji2YLE2o) 》、《[005-FreeBSD14.2 更换 pkg 源为 USTC 镜像站](https://www.bilibili.com/video/BV13ji2YLEkV) 》和《[006-FreeBSD14.2 安装 fcitx5 及其输入法](https://www.bilibili.com/video/BV13ji2YLE3m) 》。已经分别插入了对应的目录。
-- 2024.12.3  
+- 2024.12.3
   - “第 1.3 节 为什么要使用 FreeBSD”新增“旧闻：《FreeBSD 基金会收到史上最大一笔捐款》”
-- 2024.11.30  
-  - “第 3.7 节 通过 freebsd-update 更新 FreeBSD”更新至 FreeBSD 14.2-RELEASE  
-  - “第 2.0 节 FreeBSD 安装图解”更新至 FreeBSD 14.2-RELEASE  
+- 2024.11.30
+  - “第 3.7 节 通过 freebsd-update 更新 FreeBSD”更新至 FreeBSD 14.2-RELEASE
+  - “第 2.0 节 FreeBSD 安装图解”更新至 FreeBSD 14.2-RELEASE
   - “第 3.4 节 软件包管理器 pkg 的用法”修订“安装 pkg”一节
-- 2024.11.29  
+- 2024.11.29
   - 更新“第 1.6 节 FreeBSD 开发计划”：同步上游
-- 2024.11.27  
+- 2024.11.27
   - “第 1.2 节 BSD 与哲学家 George Berkeley”新增“贝克莱与爱因斯坦”
-- 2024.11.26  
+- 2024.11.26
   - “第 19.2 节 Linux 败局与 FreeBSD 败局”新增“Git 典型缺陷”
-- 2024.11.22  
+- 2024.11.22
   - “第 4.11 节 主题与美化”新增“系统更新提示 `freebsd-update-notify`”
   - “第 17.9 节 AList”新增“官方二进制包”
   - 更新“第 16.3 节 Nodejs 相关”
-- 2024.11.17  
+- 2024.11.17
   - “第 4.2 节 安装 KDE 5”新增“解除自动锁屏”
-- 2024.11.15  
+- 2024.11.15
   - “第 4.2 节 安装 KDE 5”新增“登录界面主题”
-- 2024.11.12  
+- 2024.11.12
   - “第 3.4 节 软件包管理器 pkg 的用法”新增“如何查找缺少的 .so（适用于 Linux 兼容层）”
   - “第 21.13 节 Linux 兼容层故障排除与配置”更新“sysctl 变量（基于 FreeBSD 14.1）”
-- 2024.11.9  
+- 2024.11.9
   - 新增一节：“第 6.8 节 自动挂载文件系统”
   - 新增一节：“第 5.10 节 FreeBSD 安装微信（Linux 版）”
   - “第 5.5 节 FreeBSD 安装金山 WPS（Linux 版）”：新增“基于 RockyLinux 兼容层（FreeBSD Port）”安装 WPS
-- 2024.11.8  
-  - "第 1.1 节 UNIX、Unix-like、Linux 和 FreeBSD 简介"：补充“macOS/iOS 等与 BSD 的关系”
-- 2024.11.7  
+- 2024.11.8
+  - “第 1.1 节 UNIX、Unix-like、Linux 和 FreeBSD 简介”：补充“macOS/iOS 等与 BSD 的关系”
+- 2024.11.7
   - “第 6.4 节 NTFS 的挂载”：新建“格式化”、挂载部分。
-  - 针对“[Add new category fs for file systems](https://github.com/freebsd/freebsd-ports/pull/302) [备份](https://web.archive.org/web/20260114061722/https://github.com/freebsd/freebsd-ports/pull/302)” 进行修改
-- 2024.11.2  
+  - 针对“[Add new category fs for file systems](https://github.com/freebsd/freebsd-ports/pull/302) ” 进行修改
+- 2024.11.2
   - “第 19.2 节 Linux 败局与 FreeBSD 败局” 补充思考题
   - 新建“第 19.3 节 驳《还有人记得 Linux 之前，那个理想又骄傲的 BSD 吗？》”
   - “第 17.6 节 NextCloud——基于 PostgreSQL”补充一节：“在 nextcloud 中挂载 samba 共享”
-- 2024.11.1  
+- 2024.11.1
   - 新建一章：“第 17.6 节 NextCloud——基于 PostgreSQL”，并测试通过
-- 2024/10/30  
+- 2024/10/30
   - “第 14.5 节 以太网卡”：修正配置文件路径
   - 新增“第 0.5 节 MySQL 数据库”
-- 2024.10.29  
+- 2024.10.29
   - 将原“第 11 章更新与升级 FreeBSD”拆分到第 3 章，将原“第 0 章计算机概论”移动到第 11 章
   - “第 3.9 节 使用 pkgbase 更新 FreeBSD”补充境内镜像站，并测试通过 NJU 163 USTC
-- 2024.10.28  
+- 2024.10.28
   - “第 17.9 节 AList”：服务部分测试通过
-- 2024.10.27  
+- 2024.10.27
   - USTC、163、NJU pkg-freebsd 源基本恢复正常
   - 新增一节：“第 17.9 节 AList”
-  - "第 4.16 节 安装 CDE" 测试通过
+  - “第 4.16 节 安装 CDE” 测试通过
 - 2024.10.8
   - 同步更新“第 1.5 节 谁在使用 FreeBSD”
   - 重写“第 4.1 节 安装显卡驱动及 Xorg（必看）”
@@ -799,7 +847,7 @@
   - USTC、163、NJU pkg-freebsd 源故障，已经反馈
   - 同步上游：“第 1.6 节 FreeBSD 开发计划”
 - 2024.10.5
-  - 添加贡献者“[dongdigua](https://github.com/dongdigua) [备份](https://web.archive.org/web/20260115010302/https://github.com/dongdigua)”
+  - 添加贡献者“[dongdigua](https://github.com/dongdigua) ”
   - “第 3.4 节 软件包管理器 pkg 的用法”：重写故障排除。
   - 新增一节：“第 2.2 节 安装 FreeBSD——基于 Hyper-V”，原章节拆分到各个子章节。
   - 将“参考资料与贡献者名单”拆分成独立的两个小节
@@ -891,13 +939,12 @@
   - “第 2.11 节 声卡与网卡设置”新增“Realtek（螃蟹卡）”
 - 2024.7.6
   - ykla 回归
-  - 更新“第 2.14 节 FreeBSD 硬件选择”  
-  
+  - 更新“第 2.14 节 FreeBSD 硬件选择”
 
 ## 2024 年第二季度
 
 - 2024.6.2
-  - “第 20.1 节 游戏”新增“Godot 游戏”  
+  - “第 20.1 节 游戏”新增“Godot 游戏”
 - 2024.6.1
   - 更新兼容层相关教程
   - “第 5.7 节 安装 QQ”增补若干故障排除
@@ -907,10 +954,10 @@
   - “贡献说明”新增“如何使用 git 拉取本项目”
 
 ## 2024 年第一季度
-  
+
 - 2024.2.24
   - “第 20.2 节 音视频播放器”新增“用 MPD 播放 DSD”
-  
+
 ## 2023 年第四季度
 
 - 2023.12.28
@@ -920,59 +967,59 @@
 - 2023.12.2
   - “第 4.5 节 安装 Xfce”新增“软件推荐”
 - 2023.11.27
-  - “第 18.8 节 OpenBSD 在 RISC-V 开发板上的安装”：增加串口启动输出信息  
+  - “第 18.8 节 OpenBSD 在 RISC-V 开发板上的安装”：增加串口启动输出信息
   - “第 23.4 节 引导界面”增补 FreeBSD 精简启动输出的方法
 - 2023.11.26
   - 新增“第 18.8 节 OpenBSD 在 RISC-V 开发板上的安装”
   - 格式化“第 22.12 节 安装 code-server 和 clangd”
 - 2023.11.23
-  - 新增“第 4.9 节 安装 bspwm”  
+  - 新增“第 4.9 节 安装 bspwm”
 - 2023.11.19
-  - “第 6.2 节 ZFS”新增“FreeBSD on zfs 的 zpool 升级”  
+  - “第 6.2 节 ZFS”新增“FreeBSD on zfs 的 zpool 升级”
 - 2023.11.18
-  - 重写“第 22.12 节 安装 code-server 和 clangd”  
+  - 重写“第 22.12 节 安装 code-server 和 clangd”
 - 2023.11.15
-  - 新增“第 4.8 节 安装 LXQt”  
+  - 新增“第 4.8 节 安装 LXQt”
 - 2023.11.5
-  - 增补“第 22.12 节 安装 code-server 和 clangd”  
+  - 增补“第 22.12 节 安装 code-server 和 clangd”
 - 2023.10.14
-  - 增补“第 22.12 节 安装 code-server 和 clangd”  
+  - 增补“第 22.12 节 安装 code-server 和 clangd”
 - 2023.10.13
   - 增补“第 22.12 节 安装 code-server 和 clangd”
 - 2023.10.12
   - “第 4.2 节 安装 KDE 5”中的“lightdm 登录管理器本地化语言”移动至“第 4.5 节 安装 Xfce”
   - “第 4.2 节 安装 KDE 5”新增“SDDM 中文化”
-  
+
 ## 2023 年第三季度
-  
+
 - 2023.9.21
-  - “第 6.2 节 ZFS”新增“复制出启动环境”  
+  - “第 6.2 节 ZFS”新增“复制出启动环境”
 - 2023.9.20
   - “第 26.4 节 桌面与其他软件”OpenBSD 新增“KDE 5”，待测试
   - “第 26.4 节 桌面与其他软件”新增 OpenBSD 关机方法
   - 审核全书所有参考文献的有效性，真实性，并统一其格式
 - 2023.9.18
-  - 新增“第 18.7 节 树莓派与 OpenBSD”  
+  - 新增“第 18.7 节 树莓派与 OpenBSD”
 - 2023.9.7
-  - 增补“第 8.1 节 sudo”  
+  - 增补“第 8.1 节 sudo”
 - 2023.9.5
   - “第 30.13 节 Linux 兼容层与应用”新增“sysctl 变量”说明
 - 2023.9.4
-  - 增补“第 29.5 节 安装 Hyprland”  
+  - 增补“第 29.5 节 安装 Hyprland”
 - 2023.9.3
   - “第 29.5 节 安装 Hyprland”补图
 - 2023.9.1
-  - 全书代码高亮  
+  - 全书代码高亮
 - 2023.8.31
-  - 实质性新增“第 29.5 节 安装 Hyprland”  
+  - 实质性新增“第 29.5 节 安装 Hyprland”
   - 测试全书代码高亮
 - 2023.8.30
-  - 为便于导出 PDF，将第 0 章合并后置到第 1 章  
+  - 为便于导出 PDF，将第 0 章合并后置到第 1 章
 - 2023.8.28
   - 增补“第 7.1 节 HTTP 代理”，新增“HTTP_PROXY 代理”
   - “第 11.2 节 通过源代码更新”新增故障排除
 - 2023.8.27
-  - 更新“第 1.7 节 其他 BSD 简介”  
+  - 更新“第 1.7 节 其他 BSD 简介”
 - 2023.8.26
   - 增补“第 26.5 节 桌面与其他软件”
   - 验证兼容层中输入法问题
@@ -980,38 +1027,38 @@
   - “第 30.3 节 Linux 兼容层——基于 Ubuntu/Debian”新增 Debian 12（bookworm）兼容层脚本
   - 更新全书安装图片到 FreeBSD 14.0-RELEASE
 - 2023.8.20
-  - “第 2.9 节 触摸板的设置”新增“关闭触摸板”  
+  - “第 2.9 节 触摸板的设置”新增“关闭触摸板”
   - 增补全书兼容层相关章节
 - 2023.8.18
-  - “第 30.1 节 Linux 兼容层实现”增补“题外话——使用 Linux 兼容层为什么不是苦难哲学？”  
+  - “第 30.1 节 Linux 兼容层实现”增补“题外话——使用 Linux 兼容层为什么不是苦难哲学？”
   - 对来源不明的章节进行版权标注或警告
 - 2023.8.17
-  - 新增“第 0.9 节 谁在使用 FreeBSD”  
+  - 新增“第 0.9 节 谁在使用 FreeBSD”
   - 新增“第 0.10 节 FreeBSD 中文社区文章翻译表”
 - 2023.8.16
   - 新增“第 0.8 节 FreeBSD 子项目”
 - 2023.8.13
-  - 增补“第 9.4 节 jail 更新”  
+  - 增补“第 9.4 节 jail 更新”
   - 增补“第 9.3 节 jail 配置”
   - “第 4.2 节 安装 KDE 5”增补“lightdm 登录管理器本地化语言”
 - 2023.8.12
-  - 增补审阅“第 3.5 节 通过源代码 ports 方式安装软件”  
+  - 增补审阅“第 3.5 节 通过源代码 ports 方式安装软件”
   - 新增“第 18.5 节 树莓派与 Linux 兼容层”
   - “第 30.11 节 Linux 兼容层——基于 Deepin”新增“直接从 FreeBSD 的命令行运行软件”
   - “第 23.4 节 引导界面”新增“精简启动输出”
 - 2023.8.8
   - “第 18.3 节 使用配置”新增“htop”、“显示温度”、“查看 CPU 频率”
 - 2023.8.7
-  - 新增“第 0.8 节 FreeBSD 中文社区文章翻译表”  
+  - 新增“第 0.8 节 FreeBSD 中文社区文章翻译表”
   - “第 17.4 节 MySQL 5.X”，补充通过 ports 安装旧版 MySQL 软件的方法
 - 2023.8.4
-  - “第 18.2 节 系统安装”增补内核用户空间编译等  
+  - “第 18.2 节 系统安装”增补内核用户空间编译等
   - 实质性填充“第 11.2 节 通过源代码更新”
 - 2023.8.3
-  - 新增“第 1.7 节 FreeBSD 安全公告”  
+  - 新增“第 1.7 节 FreeBSD 安全公告”
   - 增补“第 3.5 节 通过源代码 ports 方式安装软件”
 - 2023.8.1
-  - 新增“第 11.4 节 使用 pkgbase 更新”  
+  - 新增“第 11.4 节 使用 pkgbase 更新”
   - 增补“第 18.2 节 系统安装”
 - 2023.7.31
   - “第 27.3 节 桌面与其他软件”新增“xfce”、“Mate”
@@ -1024,159 +1071,157 @@
   - 新增“第 19.17 节 杂记”
 - 2023.7.26
   - 新增 NetBSD “第 27.1 节 安装与配置”
-  - 新增 NetBSD “第 27.2 节 换源与包管理器”
+  - 新增 NetBSD “第 27.2 节 切换软件源与包管理器”
 - 2023.7.22
   - 增补 OpenBSD “第 26.1 节 安装”，将其更新至 OpenBSD 7.3
 - 2023.7.21
   - 新增“第 16.15 节 MinIO 对象存储服务”
   - 新增“第 30.11 节 Linux 兼容层——基于 Deepin”
 - 2023.7.12
-  - 新增“第30.7节 Linux 兼容层——基于 Gentoo Linux”
+  - 新增“第 30.7 节 Linux 兼容层——基于 Gentoo Linux”
 - 2023.7.11
   - 新增“第 30.10 节 Android 兼容层”
-  - 新增“第30.7节 Linux 兼容层——基于 Gentoo Linux”
-  - 新增“第30.8节 Linux 兼容层——基于 Rocky Linux”
-  - 新增“第30.9节 Linux 兼容层——基于 Slackware Linux”
+  - 新增“第 30.7 节 Linux 兼容层——基于 Gentoo Linux”
+  - 新增“第 30.8 节 Linux 兼容层——基于 Rocky Linux”
+  - 新增“第 30.9 节 Linux 兼容层——基于 Slackware Linux”
 - 2023.7.9
-  - 向 openSUSE 提交 [Bug 1213157 - repo http://download.opensuse.org/update/leap/15.5/oss : metadata expired](https://bugzilla.opensuse.org/show_bug.cgi?id=1213157) [备份](https://web.archive.org/web/20260115013739/https://bugzilla.opensuse.org/show_bug.cgi?id=1213157)  zypper 一直有这个警告，不知道如何消除。更新、换源均不起作用。dnf 显示正常。但是不影响正常使用。
+  - 向 openSUSE 提交 [Bug 1213157 - repo http://download.opensuse.org/update/leap/15.5/oss : metadata expired](https://bugzilla.opensuse.org/show_bug.cgi?id=1213157) zypper 一直有这个警告，不知道如何消除。更新、切换软件源均不起作用。dnf 显示正常。但是不影响正常使用。
 - 2023.7.8
   - 新增“第 30.6 节 Linux 兼容层——基于 openSUSE”
 - 2023.7.7
   - 新增视频教程 [07-FreeBSD-ArchLinux 兼容层脚本使用说明](https://www.bilibili.com/video/BV1wg4y1w7QV/)
   - 新增视频教程 [06-FreeBSD-Ubuntu 兼容层脚本使用说明](https://www.bilibili.com/video/BV1iM4y1j7E9/)
 - 2023.7.5
-  - 合并全书 fcitx 相关教程到“第5.1节 Fcitx 输入法框架”，减少重复
-  - 合并全书 ibus 相关教程到“第5.2节 Ibus 输入法框架”，减少重复
-  - “第5.5节 安装 金山 WPS”删除对 Ports 中 WPS 的引用。因为无人维护。
+  - 合并全书 fcitx 相关教程到“第 5.1 节 Fcitx 输入法框架”，减少重复
+  - 合并全书 ibus 相关教程到“第 5.2 节 Ibus 输入法框架”，减少重复
+  - “第 5.5 节 安装 金山 WPS”删除对 Ports 中 WPS 的引用。因为无人维护。
 - 2023.7.4
-  - “第1.9节 参考资料与贡献者名单”新增若干参考文献
-  - “第1.9节 参考资料与贡献者名单”移除鸟哥的 Linux 私房菜。不适合作为 FreeBSD 参考书目
-  - “第1.9节 参考资料与贡献者名单”：为所有参考书目增加封面
-  
-## 2023 年第二季度  
+  - “第 1.9 节 参考资料与贡献者名单”新增若干参考文献
+  - “第 1.9 节 参考资料与贡献者名单”移除鸟哥的 Linux 私房菜。不适合作为 FreeBSD 参考书目
+  - “第 1.9 节 参考资料与贡献者名单”：为所有参考书目增加封面
 
-  
+## 2023 年第二季度
+
 - 2023.6.24
   - 新增“第 5.0 节 输入法与环境变量”
 - 2023.6.19
-  - “第1.4节 FreeBSD 与其他操作系统”新增“时间表”
+  - “第 1.4 节 FreeBSD 与其他操作系统”新增“时间表”
 - 2023.6.18
-  - 新增“第19.15节 吾乡何处”
+  - 新增“第 19.15 节 吾乡何处”
 - 2023.6.16
   - 新增“第 30.5 节 Linux 兼容层 —— 基于 archlinux-pacman”
 - 2023.6.15
-  - 新增空文件“第30.5节 Linux 兼容层——基于 archlinux-pacman”
+  - 新增空文件“第 30.5 节 Linux 兼容层——基于 archlinux-pacman”
   - 重写“第 22.12 节 安装 code-server 和 clangd”
 - 2023.6.14
-  - 新增“第19.9节 所谓开源哲学”
-  - 新增“第19.10节 兔子”
-  - 新增“第19.11节 寻道”
-  - 新增“第19.12节 诗歌选”
-  - 新增“第19.13节 简议道风”
-  - 新增“第19.14节 小说——你与暗”
-  - “第30.3节 Linux 兼容层——基于 Ubuntu/Debian”新增 Shell 安装脚本
-  - “第30.4节 Linux 兼容层——基于 ArchLinux”新增 Shell 安装脚本
+  - 新增“第 19.9 节 所谓开源哲学”
+  - 新增“第 19.10 节 兔子”
+  - 新增“第 19.11 节 寻道”
+  - 新增“第 19.12 节 诗歌选”
+  - 新增“第 19.13 节 简议道风”
+  - 新增“第 19.14 节 小说——你与暗”
+  - “第 30.3 节 Linux 兼容层——基于 Ubuntu/Debian”新增 Shell 安装脚本
+  - “第 30.4 节 Linux 兼容层——基于 ArchLinux”新增 Shell 安装脚本
 - 2023.6.12
   - freebsd.cn 镜像站永久退役。移除教程中所有对其引用链接和说明
 - 2023.6.10
-  - TCBSD “第31.2节 系统安装与基本配置”新增虚拟机安装方法，辅以图片说明
-  - 新增 TCBSD “第31.3节 开发环境配置”
+  - TCBSD “第 31.2 节 系统安装与基本配置”新增虚拟机安装方法，辅以图片说明
+  - 新增 TCBSD “第 31.3 节 开发环境配置”
 - 2023.5.26
-  - 更新“第 22.12 节 安装 code-server 和 clangd”  
+  - 更新“第 22.12 节 安装 code-server 和 clangd”
 - 2023.5.24
-  - 重写“第22.12节 安装 code-server 和 clangd”  
+  - 重写“第 22.12 节 安装 code-server 和 clangd”
   - portsnap 已弃用。移除教程中所有对其引用链接和说明
 - 2023.5.23
-  - 新增“第22.12节 安装 code-server 和 clangd”
+  - 新增“第 22.12 节 安装 code-server 和 clangd”
 - 2023.5.21
-  - 更新“第22.7节 Python 与 VS Code”
+  - 更新“第 22.7 节 Python 与 VS Code”
 - 2023.5.3
   - 引入 GitHub Action：链接检查、Markdown 格式化
 - 2023.4.27
   - 经过 safreya 的提醒，目前 KDE 已不需要 procfs，移除教程中所有对其引用链接和说明
 - 2023.4.15
-  - 经过 safreya 的提醒，移除不存在的服务项 `gnome_enable="YES"`。同时提交 PR 到了 FreeBSD 手册，[The gnome service does not exist](https://reviews.freebsd.org/D39580) [备份](https://web.archive.org/web/20260114061536/https://reviews.freebsd.org/D39580)
-  - “第4.8节 root 登录桌面”增补“GDM（GNOME 显示管理器）”
+  - 经过 safreya 的提醒，移除不存在的服务项 `gnome_enable="YES"`。同时提交 PR 到了 FreeBSD 手册，[The gnome service does not exist](https://reviews.freebsd.org/D39580)
+  - “第 4.8 节 root 登录桌面”增补“GDM（GNOME 显示管理器）”
 - 2023.4.13
-  - 更新“第11.1节 通过 freebsd-update 更新”
-  
+  - 更新“第 11.1 节 通过 freebsd-update 更新”
+
 ## 2023 年第一季度
 
 - 2023.3.28
-  - “第5.7节 安装 QQ”：删除“Linux QQ 2.x （GTK 2.0）”，已弃用
-  - “第5.7节 安装 QQ”：更新相关教程到新版 QQ
+  - “第 5.7 节 安装 QQ”：删除“Linux QQ 2.x （GTK 2.0）”，已弃用
+  - “第 5.7 节 安装 QQ”：更新相关教程到新版 QQ
 - 2023.3.24
-  - 不要选`local_unbound`，会影响 DNS，见 [https://bugs.freebsd.org/bugzilla/show\_bug.cgi?id=262290](https://bugs.freebsd.org/bugzilla/show\_bug.cgi?id=262290) 。
+  - 不要选`local_unbound`，会影响 DNS，见 [https://bugs.freebsd.org/bugzilla/show\_bug.cgi?id=262290](https://bugs.freebsd.org/bugzilla/show\_bug.cgi?id=262290)。
 - 2023.3.22
-  - “第23.1节 恢复模式与密码重置”：重写 ZFS 挂载
+  - “第 23.1 节 恢复模式与密码重置”：重写 ZFS 挂载
 - 2023.3.10
-  - 重写“第3.6节 通过 DVD 安装软件”  
+  - 重写“第 3.6 节 通过 DVD 安装软件”
 - 2023.3.1
-  - “第24.5节 利用脚本自动生成 BSDlibc 库文本”新增“改进方案”  
+  - “第 24.5 节 利用脚本自动生成 BSDlibc 库文本”新增“改进方案”
 - 2023.2.21
-  - 新增“第30.1节 Linux 兼容层实现”
-  - 新增“第30.3节 Linux 兼容层——基于 Ubuntu/Debian”
-  - 新增“第30.4节 Linux 兼容层——基于 ArchLinux”  
-  - 新增“第30.5节 高级教程：Linux 兼容层与 Jail”
+  - 新增“第 30.1 节 Linux 兼容层实现”
+  - 新增“第 30.3 节 Linux 兼容层——基于 Ubuntu/Debian”
+  - 新增“第 30.4 节 Linux 兼容层——基于 ArchLinux”
+  - 新增“第 30.5 节 高级教程：Linux 兼容层与 Jail”
 - 2023.2.8
-  - “第14.2节 WIFI”新增“博通（Broadcom）网卡驱动”  
+  - “第 14.2 节 WIFI”新增“博通（Broadcom）网卡驱动”
 - 2023.1.24
-  - 实质性填充“第22.3节 如何参与 FreeBSD 协作”  
+  - 实质性填充“第 22.3 节 如何参与 FreeBSD 协作”
 - 2023.1.13
-  - OpenBSD“第26.2节 配置”新增“挂载安卓设备”  
+  - OpenBSD“第 26.2 节 配置”新增“挂载 Android 设备”
   - 在合适的位置引入“xdg-user-dirs”以自动创建家目录相关路径
 - 2023.1.11
   - 新增视频：[安装 DragonFly BSD 6.4](https://www.bilibili.com/video/BV1BM41187pD/)
 - 2023.1.9
-  - “第5.7节 安装 QQ”新增“Linux QQ 3.x（electron）【可选：基于 ArchLinux 兼容层】”
+  - “第 5.7 节 安装 QQ”新增“Linux QQ 3.x（electron）【可选：基于 ArchLinux 兼容层】”
 - 2023.1.8
-  - 新增“第9.6节 使用 qjail 管理 jail”
-  - “第5.5节 Linux 兼容层”新增“Gentoo Linux 兼容层”
+  - 新增“第 9.6 节 使用 qjail 管理 jail”
+  - “第 5.5 节 Linux 兼容层”新增“Gentoo Linux 兼容层”
 - 2023.1.7
-  - “第5.5节 Linux 兼容层”新增“安装 Windows 11 字体【可选。自制包，打包同时兼容与低版本 Ubuntu】”
+  - “第 5.5 节 Linux 兼容层”新增“安装 Windows 11 字体【可选。自制包，打包同时兼容与低版本 Ubuntu】”
 - 2023.1.5
-  - “第5.5节 Linux 兼容层”新增“ArchLinux 兼容层”
+  - “第 5.5 节 Linux 兼容层”新增“ArchLinux 兼容层”
 - 2023.1.4
-  - 实质性填充“第22.4节 C/C++ 环境的配置”  
-  
+  - 实质性填充“第 22.4 节 C/C++ 环境的配置”
+
 ## 2022 年第四季度
 
 - 2022.12.31
   - 实现 PDF 文档导出
-  - 实质性填充“第22.6节 Qt 环境的配置”
+  - 实质性填充“第 22.6 节 Qt 环境的配置”
 - 2022.12.30
-  - “第5.7节 安装 QQ”新增“Linux QQ 3.x（electron）”
-  - “第5.5节 Linux 兼容层”新增“缺失 .so 文件”的故障排除
+  - “第 5.7 节 安装 QQ”新增“Linux QQ 3.x（electron）”
+  - “第 5.5 节 Linux 兼容层”新增“缺失 .so 文件”的故障排除
 - 2022.12.7
-  - “第11.1节 通过 freebsd-update 更新”新增“查看 FreeBSD 版本”
+  - “第 11.1 节 通过 freebsd-update 更新”新增“查看 FreeBSD 版本”
 - 2022.11.24
   - 新增“贡献指南”
-  - 新增“CoC”  
+  - 新增“CoC”
 - 2022.11.11
   - “第一节 Fcitx 输入法框架”新增 KDE5 下的安装方法
 - 2022.11.6
   - 新增 GitHub Action：Markdown 链接检查
 - 2022.10.28
-  - 实质性测试“第五节 使用 bhyve 安装 Windows 11”  
+  - 实质性测试“第五节 使用 bhyve 安装 Windows 11”
 - 2022.10.21
   - 在全书移除北京交通大学开源镜像站。不可用。
 - 2022.10.15
-  - 新增“第五节 使用 bhyve 安装 Windows 11”  
+  - 新增“第五节 使用 bhyve 安装 Windows 11”
 - 2022.10.12
-  - 新增“第〇节 如何订阅 FreeBSD 邮件列表”  
+  - 新增“第〇节 如何订阅 FreeBSD 邮件列表”
 - 2022.10.6
-  - 实质性填充“第二节 安装 CDE”  
+  - 实质性填充“第二节 安装 CDE”
 
 ## 2022 年第三季度
-  
+
 - 2022.9.20
   - 新增树莓派“第三节 使用配置”
   - 新增“第三节 安装 Awesome”
   - 新增“第三节 PHP 8.X”
-  
-  
+
 ## 2022 年第二季度
-  
+
 - 2022.6.23
   - 新增“第七节 小说——FreeBSD 从入门到跑路”
   - 重写“第九节 参考资料与贡献者名单”
@@ -1187,9 +1232,9 @@
 - 2022.6.16
   - 实质性填充“第八节 远程桌面管理”中的“XRDP”
 - 2022.6.13
-  - 将网站部署到 https://book.bsdcn.org
+  - 将网站部署到 <https://book.bsdcn.org>
 - 2022.6.9
-  - 实质性填充“第十三节 WildFly”  
+  - 实质性填充“第十三节 WildFly”
 - 2022.6.3
   - 实质性填充“第二节 V2Ray”
 - 2022.5.27
@@ -1203,29 +1248,29 @@
 - 2022.5.20
   - “第二节 配置”增补 OpenBSD
 - 2022.5.3
-  - 实质性填充“第一节 安装 i3wm”  
+  - 实质性填充“第一节 安装 i3wm”
   - 增补“第八节 Rust/Go 环境的配置”
 - 2022.4.1
-  - 增补“第七节 常用软件 与 SSH 配置”  
-  
+  - 增补“第七节 常用软件 与 SSH 配置”
+
 ## 2022 年第一季度
-  
+
 - 2022.3.28
-  - 重写“第一节 FTP 服务器”  
+  - 重写“第一节 FTP 服务器”
 - 2022.3.25
   - 实质性填充“第三节 FreeBSD 的不足之处”
   - “第八节 物理机安装与硬件选配”新增“网卡推荐”
 - 2022.3.22
-  - 实质性填充“第一节 FTP 服务器”  
+  - 实质性填充“第一节 FTP 服务器”
 - 2022.3.21
-  - 重写“第三节 安装 Gnome”  
+  - 重写“第三节 安装 Gnome”
   - 增补“第二节 WiFi”
   - 增补“第九节 物理机下显卡的配置”
 - 2022.3.19
   - 新增“第三节 Node.js 相关”
 - 2022.3.4
   - 增补“第三节 安装 Gnome”
-  - 实质性填充“第十三节 无线蓝牙鼠标的设置”  
+  - 实质性填充“第十三节 无线蓝牙鼠标的设置”
 - 2022.3.3
   - 增补 FreeBSD“第〇章 图解安装”
 - 2022.3.2
@@ -1233,21 +1278,21 @@
 - 2022.2.9
   - 实质性填充“第一节 FTP 服务器”
 - 2022.2.5
-  - 增补“第二节 FreeBSD 换源方式”
+  - 增补“第二节 FreeBSD 切换软件源方式”
 - 2022.1.28
-  - “第一节 三种虚拟机与 FreeBSD 版本比较”新增“Hyper-V”  
+  - “第一节 三种虚拟机与 FreeBSD 版本比较”新增“Hyper-V”
 - 2022.1.24
-  - “第三节 安装 Gnome 3”新增输入法  
+  - “第三节 安装 Gnome 3”新增输入法
 - 2022.1.21
   - 实质性填充“第七节 Python 与 VS Code”
 - 2022.1.7
-  - 重写“第六节 root 登录桌面”  
+  - 重写“第六节 root 登录桌面”
   - 重写“第四节 安装 Mate 桌面”
   - 重写“第五节 安装 Xfce”
   - 增补“第一节 Fcitx 输入法框架”
   - 增补“第六节 物理机安装与硬件选配”
 - 2022.1.4
-  - 增补“第九节 声卡与网卡设置”  
+  - 增补“第九节 声卡与网卡设置”
 
 ## 2021 年第四季度
 
@@ -1259,20 +1304,20 @@
 - 2021.12.21
   - “第八节 Linux 用户迁移指北”新增“命令对比”
 - 2021.12.18
-  - 实质性填充“第七节 安装 QQ”  
-  - 实质性增补“第二节 FreeBSD 换源方式”
+  - 实质性填充“第七节 安装 QQ”
+  - 实质性增补“第二节 FreeBSD 切换软件源方式”
   - 实质性增补“第二节 Nginx”
   - 新增“第八节 PostgreSQL 与 pgAdmin4”
 - 2021.12.15
-  - 实质性填充“第七节 Samba 服务器”  
+  - 实质性填充“第七节 Samba 服务器”
   - 实质性填充 OpenBSD“第一节 安装”
   - 实质性填充 OpenBSD“第二节 配置”
-  - 实质性填充 OpenBSD“第三节 换源”
+  - 实质性填充 OpenBSD“第三节 切换软件源”
   - 实质性填充 OpenBSD“第五节 桌面与其他软件”
 - 2021.12.14
-  - 实质性填充 DragonFly BSD“第〇节 概述”  
+  - 实质性填充 DragonFly BSD“第〇节 概述”
 - 2021.12.13
-  - 实质性填充“第一节 恢复模式与密码重置”  
+  - 实质性填充“第一节 恢复模式与密码重置”
   - 实质性填充“第四节 ee 用法及网络配置”
 - 2021.12.12
   - 重写“第三节 磁盘扩容”
@@ -1283,11 +1328,11 @@
   - 实质性填充“第四节 MySQL 5.X”
   - 实质性填充“第一节 Apache”
 - 2021.12.9
-  - 新增“第五节 操作系统”  
+  - 新增“第五节 操作系统”
 - 2021.12.8
-  - 实质性增补“第一节 游戏”  
+  - 实质性增补“第一节 游戏”
 - 2021.12.6
-  - 实质性增补“第六节 Ext 2/3/4 等文件系统”  
+  - 实质性增补“第六节 Ext 2/3/4 等文件系统”
 - 2021.12.3
   - “第八节 Rust/Go 环境的配置”新增“Golang 官方打包（不建议）”
 - 2021.12.1
@@ -1295,7 +1340,7 @@
 - 2021.11.27
   - 实质性增补“第四节 教育”
 - 2021.11.26
-  - 实质性增补“第五节 科研与专业工具”  
+  - 实质性增补“第五节 科研与专业工具”
   - 实质性增补“第八节 Rust 环境的配置”
 - 2021.11.20
   - 实质性增补“第七节 主题与美化”
@@ -1310,14 +1355,14 @@
 
 ## 2021 年第二季度
 
-《FreeBSD 从入门到跑路》项目在 [clean-master/freebsdcn](https://github.com/clean-master/freebsdcn) [备份](https://web.archive.org/web/20260114062827/https://github.com/clean-master/freebsdcn) 进行更新。
+《FreeBSD 从入门到跑路》项目在 [clean-master/freebsdcn](https://github.com/clean-master/freebsdcn) 进行更新。
 
 ## 2021 年第一季度
 
 - 2021.3.15
   - ykla 在翌日凌晨完成了教程的初步整理与发布，此后主要维护者始终是 ykla
 - 2021.3.14
-  - 《FreeBSD 从入门到跑路》肇始于 2021 年 3 月 14 日（依据 [clean-master/freebsdcn](https://github.com/clean-master/freebsdcn/graphs/contributors) [备份](https://web.archive.org/web/20260114055913/https://github.com/clean-master/freebsdcn/graphs/contributors) 项目的创建时间分析），由 FreeBSD 中文社区 [clean-master 清理大师](https://github.com/clean-master) [备份](https://web.archive.org/web/20260114061313/https://github.com/clean-master) 发起
+  - 《FreeBSD 从入门到跑路》肇始于 2021 年 3 月 14 日（依据 [clean-master/freebsdcn](https://github.com/clean-master/freebsdcn/graphs/contributors) 项目的创建时间分析），由 FreeBSD 中文社区 [clean-master 清理大师](https://github.com/clean-master) 发起
 
 ## 2020 年第四季度
 
